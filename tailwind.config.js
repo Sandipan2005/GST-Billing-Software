@@ -9,6 +9,17 @@ export default {
     container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
     extend: {
       colors: {
+        brand: {
+          navy: "#172B4D",
+          teal: "#0F766E",
+          "teal-hover": "#115E59",
+        },
+        status: {
+          success: "#15803D",
+          warning: "#D97706",
+          danger: "#DC2626",
+          info: "#2563EB",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

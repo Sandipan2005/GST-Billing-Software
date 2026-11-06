@@ -847,7 +847,7 @@ function App() {
             boxShadow: '0 6px 20px rgba(30,64,175,0.35), 0 2px 4px rgba(0,0,0,0.15)',
             display: 'flex', alignItems: 'center', gap: '0.4rem',
           }}>
-          ✨ Finish setup
+          <Settings size={15} /> Finish setup
         </button>
       )}
       {/* v1.10.66 (#59) — phone-only top bar with the menu button. CSS hides it
@@ -869,11 +869,10 @@ function App() {
               : ownBrand ? <span className="sidebar-logo-letter">{brand.businessName.trim().charAt(0).toUpperCase()}</span>
                 : <FileText size={22} />}
           </div>
-          {/* "by DiceCodes" always stays, under their name too. "Free forever" is
-              in the top bar; on a phone (no top bar) it stays here. */}
+          {/* "Free forever" is in the top bar; on a phone it stays here. */}
           <div className="sidebar-brand-text">
             <h2 className={`sidebar-title${ownBrand ? ' sidebar-title-own' : ''}`} title={ownBrand ? `${brand.businessName} - Free GST Billing` : undefined}>{ownBrand ? brand.businessName : 'GST Billing'}</h2>
-            <p className="sidebar-subtitle" title="Free forever. Works on this computer, even offline. No tracking, no ads."><span className="sidebar-free sidebar-free-phone">Free forever<br /></span>by DiceCodes</p>
+            <p className="sidebar-subtitle" title="Works on this computer, even offline. No tracking, no ads."><span className="sidebar-free sidebar-free-phone">Free forever<br /></span>Professional billing</p>
           </div>
           {/* Auto-hide as a ☰ button (was a text checkbox): pressed = the menu
               shrinks to icons and opens when pointed at. */}
@@ -1078,7 +1077,7 @@ function App() {
           <SupportView />
         )}
         </Suspense>
-        {/* Version + DiceCodes line: Dashboard only, so it never takes space on working screens. */}
+        {/* Version and project footer: Dashboard only, so it never takes space on working screens. */}
         {currentView === 'dashboard' && <AppFooter onOpenSupport={() => setCurrentView('support')} />}
         </ErrorBoundary>
       </div>

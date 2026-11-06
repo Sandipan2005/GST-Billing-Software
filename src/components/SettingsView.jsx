@@ -785,7 +785,7 @@ export default function SettingsView({ onSaved }) {
            the user has a scale expectation before diving in. */}
       <div className="page-header" style={{
         padding: '1.1rem 1.35rem',
-        background: 'linear-gradient(135deg, rgba(var(--primary-rgb), 0.12), var(--card-bg))',
+        background: 'var(--card-bg)',
         border: '1px solid var(--border)',
         borderRadius: 12,
         marginBottom: '1.25rem',
@@ -794,11 +794,11 @@ export default function SettingsView({ onSaved }) {
           <div style={{
             width: 44, height: 44,
             borderRadius: 12,
-            background: 'linear-gradient(135deg, var(--primary), var(--primary-darker))',
+            background: 'var(--ui-teal)',
             color: '#fff',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             fontSize: '1.15rem',
-            boxShadow: '0 6px 18px rgba(var(--primary-rgb), 0.35)',
+            boxShadow: 'none',
           }}>⚙</div>
           <div style={{ flex: 1, minWidth: 0 }}>
             <h1 className="page-title" style={{ margin: 0 }}>Settings <HelpButton title="Settings" doc={SETTINGS_TAB_DOCS[activeSection] || 'settings'} size={16} /></h1>
@@ -845,7 +845,9 @@ export default function SettingsView({ onSaved }) {
                 onClick={(e) => {
                   e.preventDefault();
                   setActiveSection(id);
-                  window.scrollTo({ top: 0 });
+                  window.requestAnimationFrame(() => {
+                    document.getElementById(id)?.scrollIntoView({ block: 'start' });
+                  });
                 }}
                 style={{
                   fontSize: '0.76rem',
@@ -853,14 +855,14 @@ export default function SettingsView({ onSaved }) {
                   padding: '0.38rem 0.8rem',
                   borderRadius: 999,
                   background: active
-                    ? 'linear-gradient(135deg, var(--primary), var(--primary-darker))'
+                    ? 'var(--ui-teal)'
                     : 'var(--bg-secondary)',
                   color: active ? '#fff' : 'var(--text)',
                   textDecoration: 'none',
                   border: active ? '1px solid transparent' : '1px solid var(--border)',
                   transition: 'all 0.18s ease',
                   whiteSpace: 'nowrap',
-                  boxShadow: active ? '0 4px 12px rgba(var(--primary-rgb), 0.4)' : 'none',
+                  boxShadow: 'none',
                 }}
                 onMouseEnter={(e) => {
                   if (!active) {
@@ -966,7 +968,7 @@ export default function SettingsView({ onSaved }) {
                       padding: '0.45rem 0.85rem',
                       borderRadius: 999,
                       background: active
-                        ? 'linear-gradient(135deg, var(--primary), var(--primary-darker))'
+                        ? 'var(--ui-teal)'
                         : 'var(--bg-secondary)',
                       color: active ? '#fff' : 'var(--text)',
                       border: active ? '1px solid transparent' : '1px solid var(--border)',
@@ -974,7 +976,7 @@ export default function SettingsView({ onSaved }) {
                       cursor: 'pointer',
                       transition: 'all 0.15s',
                       minWidth: 44,
-                      boxShadow: active ? '0 4px 10px rgba(var(--primary-rgb), 0.35)' : 'none',
+                      boxShadow: 'none',
                     }}>
                     {p.label}
                     <span style={{ display: 'block', fontSize: '0.6rem', fontWeight: 500, opacity: 0.85, marginTop: 1 }}>{p.hint}</span>

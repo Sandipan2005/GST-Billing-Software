@@ -5,12 +5,12 @@
 // business has fewer than 10 invoices (from 10 the daily support card takes
 // over, so the two never show together).
 import { useState } from 'react';
-import { Heart, Share2, X } from 'lucide-react';
+import { Heart, Share2, X, ShieldCheck } from 'lucide-react';
 import { SUPPORT_NUDGE_MIN_INVOICES } from '../utils/supporters';
 import HelpButton from './HelpButton';
 
 const KEY = 'freegstbill_welcomeCard';
-const SHARE_TEXT = 'I use Free GST Billing for my GST invoices. It is free, works offline and keeps the data on your own PC: https://github.com/IamRamgarhia/Free-GST-Billing-Software';
+const SHARE_TEXT = 'I use Free GST Billing for my GST invoices. It is free, works offline and keeps the data on your own PC: https://github.com/Sandipan2005/GST-Billing-Software';
 
 const isClosed = () => { try { return localStorage.getItem(KEY) === 'closed'; } catch { return false; } };
 
@@ -26,20 +26,24 @@ export default function WelcomeCard({ invoiceCount, onOpenSupport }) {
       <button type="button" className="welcome-card-close" onClick={close} aria-label="Close the welcome note">
         <X size={18} />
       </button>
-      <h2 id="welcome-card-title">Thank you for choosing Free GST Billing <HelpButton title="The welcome note" doc="dashboard#welcome-card" size={16} /></h2>
+      <div className="welcome-card-heading">
+        <div className="welcome-card-mark"><ShieldCheck size={18} /></div>
+        <div>
+          <h2 id="welcome-card-title">Your billing workspace is ready <HelpButton title="The welcome note" doc="dashboard#welcome-card" size={16} /></h2>
+          <p className="welcome-card-kicker">Private, offline-first invoicing for your business</p>
+        </div>
+      </div>
       <p className="welcome-card-lead">
-        And thank you to whoever told you about it. This app grows
-        because shop owners, accountants and CAs recommend it to each other.
+        Complete the essentials below once, then create invoices with your
+        business details, GST settings and payment information already in place.
       </p>
       <ul className="welcome-card-points">
-        <li><strong>Free, for good.</strong> No subscription, no ads, no locked features.</li>
-        <li><strong>Your data stays yours.</strong> Everything is saved on this PC and works offline.</li>
-        <li><strong>A new update every Saturday.</strong> Fixes and new features each week; tell us what you need on GitHub (Support &amp; About).</li>
-        <li><strong>Support is welcome, never needed.</strong> If the app saves you time, any amount by UPI keeps it going.</li>
+        <li><strong>Local by default.</strong> Your records stay on this computer and remain available offline.</li>
+        <li><strong>Built for GST work.</strong> Invoices, tax totals, payments and reports stay in one place.</li>
       </ul>
       <div className="welcome-card-actions">
         <button type="button" className="welcome-card-btn welcome-card-btn-primary" onClick={onOpenSupport}>
-          <Heart size={16} /> Support with any amount
+          <Heart size={16} /> Support the project
         </button>
         <a className="welcome-card-btn" href={`https://wa.me/?text=${encodeURIComponent(SHARE_TEXT)}`} target="_blank" rel="noopener noreferrer">
           <Share2 size={16} /> Share on WhatsApp

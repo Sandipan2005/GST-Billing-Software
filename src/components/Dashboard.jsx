@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { FileText, Trash2, Plus, IndianRupee, Receipt, Edit3, TrendingUp, Search, Copy, X, CheckCircle, Clock, AlertTriangle, MessageCircle, Mail, StickyNote, Send, Package, Download, Printer, Ban, Undo2, Eye, QrCode, Upload } from 'lucide-react';
+import { FileText, Trash2, Plus, IndianRupee, Receipt, Edit3, TrendingUp, Search, Copy, X, CheckCircle, Clock, AlertTriangle, MessageCircle, Mail, StickyNote, Send, Package, Download, Printer, Ban, Undo2, Eye, QrCode, Upload, BarChart3 } from 'lucide-react';
 import HelpButton from './HelpButton';
 import { getAllBills, saveBill, getAllProducts, applyStockChanges, getProfile, getAllClients, getStockAlertSettings, saveReceipt, deleteReceipt, getAllReceipts, markSavedPdfCancelled, getEnabledModules } from '../store';
 import { formatCurrency, INVOICE_TYPES, getFYOptions, numberToWords, belongsToProfile, salesSign, isCancelledBill, markPaidPatch, markUnpaidPatch, stockEffect, appliedStock, stockDelta, SALES_INVOICE_TYPES, localToday, amountDue, paymentStatusFor, isModuleEnabled, TDS_SECTIONS, findLowStock, trackedStock } from '../utils';
@@ -1403,7 +1403,7 @@ export default function Dashboard({ onNew, onEdit, onPrint, onDuplicate, onConve
     <div className="dashboard-container">
       <PageHeader
         compact
-        icon="📊"
+        icon={<BarChart3 size={19} />}
         title={<>Dashboard <HelpButton title="Dashboard — how to use" doc="dashboard" size={16} /></>}
         subtitle="Overview of your invoices"
         meta={`${bills.length} invoice${bills.length === 1 ? '' : 's'}`}>
@@ -1430,9 +1430,9 @@ export default function Dashboard({ onNew, onEdit, onPrint, onDuplicate, onConve
       {onOpenSupport && <WelcomeCard invoiceCount={bills.length} onOpenSupport={onOpenSupport} />}
 
       {startedSteps && (
-        <div className="glass-panel p-6 mb-6">
+        <div className="glass-panel dashboard-setup-panel p-6 mb-6">
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', marginBottom: '0.9rem' }}>
-            <span style={{ fontSize: '1.15rem' }}>👋</span>
+            <span className="setup-section-mark"><CheckCircle size={16} /></span>
             <h3 className="section-title" style={{ margin: 0, flex: 1 }}>Getting started <HelpButton title="Getting started" doc="dashboard#getting-started" size={16} /></h3>
             <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>
               {startedSteps.filter(s => s.done).length} of {startedSteps.length} done

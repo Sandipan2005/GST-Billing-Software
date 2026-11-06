@@ -4744,7 +4744,7 @@ export default function InvoiceGenerator({ onBack, profile: profileProp, editing
                         fontSize: '0.72rem', fontWeight: 600,
                         padding: '0.28rem 0.65rem', borderRadius: 999,
                         background: active
-                          ? 'linear-gradient(135deg, var(--primary), var(--primary-darker))'
+                          ? 'var(--ui-teal)'
                           : 'var(--bg-secondary)',
                         color: active ? '#fff' : 'var(--text)',
                         border: active ? '1px solid transparent' : '1px solid var(--border)',

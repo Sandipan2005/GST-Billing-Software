@@ -823,7 +823,7 @@ export const DOCS_URL = 'https://github.com/Sandipan2005/GST-Billing-Software/wi
 export const docsLink = (doc = '') => {
   const [page, section] = String(doc).split('#');
   if (!page || page === 'index') return DOCS_URL + (section ? `#${section}` : '');
-  return `${DOCS_URL}${page}.html${section ? `#${section}` : ''}`;
+  return `${DOCS_URL}${page}${section ? `#${section}` : ''}`;
 };
 
 // GSTR-1 B2C Large: an inter-state sale to an unregistered buyer above this
@@ -1907,7 +1907,7 @@ export const isValidUpiId = (s) => /^[\w.-]+@[\w.-]+$/.test(String(s || '').trim
 // switch, one plain line each), and the other modules are grouped by the
 // screen they live on, so the Features tab reads like the app itself.
 // `module: null` = always shown (Settings, Support & About with the
-// DiceCodes branding, and Lock app, which only appears once a PIN is set).
+// project branding, and Lock app, which only appears once a PIN is set).
 // `section` is the part of the sidebar: 'main' (top) or 'bottom'.
 export const MENU_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', module: 'dashboard', core: true, section: 'main', help: 'Your sales, dues and shortcuts at a glance.' },

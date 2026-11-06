@@ -1,7 +1,7 @@
 // v1.10.37 — Reusable page-header card. Reported: "I like the heading
 // that you gave into this page — I want you to do in all the pages,
 // that looks better". Extracted from the SettingsView v1.10.36 header
-// so every page gets a consistent visual identity: gradient card +
+// so every page gets a consistent visual identity: restrained card +
 // icon badge + title + subtitle + optional meta chip + right-side
 // action slot.
 //
@@ -14,6 +14,7 @@
 //   children    right-hand slot for action buttons, HelpButton, etc.
 //   compact     v1.10.77 (#84): a slim title row, no card, icon or subtitle,
 //               for screens where the table needs the room (the Dashboard).
+import { Card } from './ui/card';
 
 export default function PageHeader({ icon, title, subtitle, meta, children, compact = false }) {
   if (compact) {
@@ -27,25 +28,25 @@ export default function PageHeader({ icon, title, subtitle, meta, children, comp
     );
   }
   return (
-    <div className="page-header" style={{
+    <Card className="page-header" style={{
       padding: '1.1rem 1.35rem',
-      background: 'linear-gradient(135deg, rgba(var(--primary-rgb), 0.12), var(--card-bg))',
+      background: 'var(--card-bg)',
       border: '1px solid var(--border)',
-      borderRadius: 12,
+      borderRadius: 8,
       marginBottom: '1.25rem',
     }}>
       {/* v1.10.83 - flex: 1 so the help / action buttons sit at the right edge;
           the row was only as wide as its text, leaving them mid-header. */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', flex: 1, minWidth: 0 }}>
         {icon !== undefined && (
-          <div style={{
+          <div className="page-header-icon" style={{
             width: 44, height: 44,
-            borderRadius: 12,
-            background: 'linear-gradient(135deg, var(--primary), var(--primary-darker))',
+            borderRadius: 8,
+            background: 'var(--brand-teal, #0f766e)',
             color: '#fff',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             fontSize: '1.15rem',
-            boxShadow: '0 6px 18px rgba(var(--primary-rgb), 0.35)',
+            boxShadow: 'none',
             flexShrink: 0,
           }}>{icon}</div>
         )}
@@ -70,6 +71,6 @@ export default function PageHeader({ icon, title, subtitle, meta, children, comp
         </div>
         {children}
       </div>
-    </div>
+    </Card>
   );
 }

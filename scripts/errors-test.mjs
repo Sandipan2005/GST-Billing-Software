@@ -85,7 +85,7 @@ const cases = [
 for (const [msg, id] of cases) eq(matchKnownProblem(msg)?.id, id, `"${msg.slice(0, 50)}" -> ${id}`);
 eq(matchKnownProblem("Cannot read properties of undefined (reading 'map')"), null, 'an unknown error gets no fix link (just Report)');
 eq(knownProblemFor({ message: 'API error: 413', api: { status: 413 } })?.id, 'payload-too-large', 'a 413 status counts even with a generic message');
-ok(matchKnownProblem('Failed to fetch').url.endsWith('troubleshooting.html#cannot-connect'), 'fix link points at the docs anchor');
+ok(matchKnownProblem('Failed to fetch').url.endsWith('troubleshooting#cannot-connect'), 'fix link points at the docs anchor');
 ok(KNOWN_PROBLEMS.every((k) => /^[a-z0-9-]+$/.test(k.id) && k.fix.length > 10), 'every known problem has an anchor id and a one-line fix');
 ok(isChunkLoadError('Loading chunk 7 failed') && !isChunkLoadError('Failed to fetch'), 'chunk-load errors are told apart from a stopped server');
 
