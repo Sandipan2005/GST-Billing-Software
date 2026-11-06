@@ -29,7 +29,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (Control Panel → **Stop Server**, or the launcher's
    **More options → Stop the app**).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
@@ -441,7 +441,7 @@ because Mac users could not start the app at all.
 
 #### Mac
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Double-click it to unzip, then double-click **Free GST Billing - MAC**.
 3. The first time, macOS may say it "cannot be opened because Apple cannot
    check it". **Hold Control, click the file, choose Open, then Open again.**
@@ -488,7 +488,7 @@ welcome for new users.**
 
 > **If the app does not start since the last update (#109):** download
 > `Free-GST-Billing.zip` from the
-> [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest),
+> [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest),
 > extract it over your Free GST Billing folder (replace files when asked) and
 > click **Open App**. It sets itself up; your data is kept.
 
@@ -503,7 +503,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -587,7 +587,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -690,7 +690,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -709,7 +709,7 @@ an update never touches. The updater also takes an automatic backup to
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Added
 - **Own invoice numbering for each business** (#95, thanks @Vim1972). With
@@ -785,7 +785,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -804,7 +804,7 @@ an update never touches. The updater also takes an automatic backup to
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Added
 - **Start numbering from** (#93, thanks @ved935030-afk): **Settings →
@@ -851,7 +851,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -870,7 +870,7 @@ an update never touches. The updater also takes an automatic backup to
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed
 - **Opening a saved invoice replaced its Terms & Conditions** with your first
@@ -964,7 +964,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -983,7 +983,7 @@ an update never touches. The updater also takes an automatic backup to
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed
 - **Stock follows the invoice** (#80, thanks @raviagrawal01). Changing a
@@ -1043,7 +1043,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.75.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -1062,7 +1062,7 @@ an update never touches. The updater also takes an automatic backup to
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed
 - **A new ZIP no longer installs a second copy.** Extracting a new version
@@ -1138,7 +1138,7 @@ Use the launcher: **More options → Update to the latest version**, then
 
 #### If that does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.74.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -1155,7 +1155,7 @@ an update never touches. The updater also takes an automatic backup to
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - GST returns
 - **Exports without a GSTIN were counted twice** in GSTR-3B: in 3.1(a) and the
@@ -1229,7 +1229,7 @@ in 1.10.72, below). Use the launcher:
 
 #### If the launcher update does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.73.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -1246,7 +1246,7 @@ an update never touches. The updater also takes an automatic backup to
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### New - two invoice designs
 Under **Customize → PDF Style** (or Settings → Print & PDF for every invoice):
@@ -1321,7 +1321,7 @@ From 1.10.72 on, **Update Now** inside the app works again.
 
 #### If the launcher update does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.72.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -1339,7 +1339,7 @@ before it changes anything.
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - "Launcher scripts not detected" (#73)
 Reported by @deppen12. The Control Panel said the launcher scripts were
@@ -1375,7 +1375,7 @@ That is all — your data is not touched.
 
 #### If the Update button does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.71.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -1393,7 +1393,7 @@ before it changes anything.
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - invoices
 - **Print now saves the invoice** before printing, like Save & Download. It
@@ -1465,7 +1465,7 @@ That is all — your data is not touched.
 
 #### If the Update button does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.70.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app (click **Stop the app** in the launcher if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open anything while still inside the ZIP.
 4. Extract over your existing Free GST Billing folder, replacing files when asked.
@@ -1483,7 +1483,7 @@ before it changes anything.
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - the stamp could be cut in half across two pages
 
@@ -1538,7 +1538,7 @@ That is all — your data is not touched.
 
 #### If the Update button does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.69.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. **Right-click the ZIP → Extract All.** Do not open the launcher from inside
    the ZIP — Windows unpacks only that one file and the app cannot start.
@@ -1557,7 +1557,7 @@ before it changes anything.
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - the launcher had no icon, so Windows drew a blank white page
 
@@ -1739,7 +1739,7 @@ Explorer never implemented, and the launcher renders in Internet Explorer.
 ### Added - install with one PowerShell command
 
 ```powershell
-irm https://raw.githubusercontent.com/IamRamgarhia/Free-GST-Billing-Software/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/Sandipan2005/GST-Billing-Software/main/install.ps1 | iex
 ```
 
 Fetches the latest release, extracts it to `%LOCALAPPDATA%\Programs\Free GST
@@ -1789,7 +1789,7 @@ That is all — your data is not touched.
 
 #### If the Update button does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.68.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when asked.
@@ -1807,7 +1807,7 @@ before it changes anything.
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Added - a GSTIN fills in the state, and catches its own typos
 
@@ -1861,7 +1861,7 @@ That is all — your data is not touched.
 
 #### If the Update button does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.67.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when asked.
@@ -1879,7 +1879,7 @@ before it changes anything.
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - adding a new company could replace the one you had
 
@@ -1977,7 +1977,7 @@ That is all — your data is not touched.
 
 #### If the Update button does not work (or you are unsure)
 1. Download `Free-GST-Billing-v1.10.66.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when asked.
@@ -1998,7 +1998,7 @@ before it changes anything.
 
 #### Something went wrong?
 Open an issue with a screenshot of the error:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - one company's expenses and purchases counted in another's figures
 
@@ -2132,7 +2132,7 @@ All three requested in #58 by @sangwanmail-eng.
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.65.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 
 ### Fixed - the dashboard did not refresh after switching business
 
@@ -2209,7 +2209,7 @@ belonging to one company should not appear under the other."*
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.64.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 
 ### Added - invoices are scoped to the business that issued them
 
@@ -2267,7 +2267,7 @@ Reported (#54, @ANIM35H), with the exact cause already diagnosed. Thank you.
 ### How to update
 
 Download `Free-GST-Billing-v1.10.63.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
 and extract it over your folder. If your app never started, this is the
 release that fixes it - nothing else needs doing.
 
@@ -2328,7 +2328,7 @@ Reported (#53, @sangwanmail-eng).
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.62.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
 and extract it over your folder.
 
 ### Added - "Mark all as read" on the notification bell
@@ -2422,7 +2422,7 @@ Reported by @sguptagzb (#51) with a sample PDF attached, and by
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.60.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
 and extract it over your folder. Data in `_system/data/` is untouched.
 
 ### Fixed - the PDF came out with no formatting at all (#51)
@@ -2488,7 +2488,7 @@ optimisation - and an honest negative result on the scrolling report.**
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.59.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
 and extract it over your folder. Data in `_system/data/` is untouched.
 
 ### Security - all open advisories closed
@@ -2550,7 +2550,7 @@ Reported (#47, @sangwanmail-eng).
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.58.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
 and extract it over your folder. Data in `_system/data/` is untouched.
 
 ### Fixed - an empty invoice could be saved and printed
@@ -2611,7 +2611,7 @@ Items 1-3 of #44 (@sangwanmail-eng). Item 4 is still open - see below.
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.57.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
 and extract it over your folder. Data in `_system/data/` is untouched.
 
 ### Fixed - terms and conditions ran together as one paragraph
@@ -2677,7 +2677,7 @@ every time show popup"*. A regression from v1.10.55, four days old.
 
 Launcher -> **Update** -> **Stop Server** -> **Open App**, or download
 `Free-GST-Billing-v1.10.56.zip` from the
-[Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+[Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
 and extract it over your folder. Data in `_system/data/` is untouched.
 
 ### Fixed
@@ -2737,7 +2737,7 @@ Reported (#43, @sangwanmail-eng).
 
 1. Open the launcher, click **Update**, then **Stop Server** -> **Open App**.
 2. Or download `Free-GST-Billing-v1.10.55.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest)
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest)
    and extract it over your existing folder.
 
 Your data in `_system/data/` is never touched by an update.
@@ -2827,7 +2827,7 @@ That is all - your data is not touched.
 **If the Update button does not work (or you are unsure)**
 
 1. Download `Free-GST-Billing-v1.10.54.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -2896,7 +2896,7 @@ That is all - your data is not touched.
 **If the Update button does not work (or you are unsure)**
 
 1. Download `Free-GST-Billing-v1.10.53.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -2984,7 +2984,7 @@ That is all - your data is not touched.
 **If the Update button does not work (or you are unsure)**
 
 1. Download `Free-GST-Billing-v1.10.52.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -2994,7 +2994,7 @@ That is all - your data is not touched.
 `_system/data/`, which an update never touches.
 
 **Something went wrong?** Open an issue with a screenshot:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed - supplier and item lists showed the wrong text
 
@@ -3051,7 +3051,7 @@ That is all — your data is not touched.
 **If the Update button does not work (or you are unsure)**
 
 1. Download `Free-GST-Billing-v1.10.51.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -3063,7 +3063,7 @@ automatic backup to `Documents\FreeGSTBill Backups\` before it changes
 anything.
 
 **Something went wrong?** Open an issue with a screenshot:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed — empty Terms / Notes printed a stray heading
 
@@ -3131,7 +3131,7 @@ That is all — your data is not touched.
 **If the Update button does not work (or you are unsure)**
 
 1. Download `Free-GST-Billing-v1.10.50.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -3143,7 +3143,7 @@ automatic backup to `Documents\FreeGSTBill Backups\` before it changes
 anything.
 
 **Something went wrong?** Open an issue with a screenshot:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Added — supplier and item recall in Add Purchase Bill
 
@@ -3316,7 +3316,7 @@ That is all — your data is not touched.
 **If the Update button does not work (or you are unsure)**
 
 1. Download `Free-GST-Billing-v1.10.49.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -3328,7 +3328,7 @@ automatic backup to `Documents\FreeGSTBill Backups\` before it changes
 anything.
 
 **Something went wrong?** Open an issue with a screenshot:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Security — jspdf 4.2.0 → 4.2.1 (critical)
 
@@ -3413,7 +3413,7 @@ That is all — your data is not touched.
 **If the Update button does not work (or you are unsure)**
 
 1. Download `Free-GST-Billing-v1.10.48.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -3425,7 +3425,7 @@ automatic backup to `Documents\FreeGSTBill Backups\` before it changes
 anything.
 
 **Something went wrong?** Open an issue with a screenshot:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ### Fixed — "PDF saves as thermal printer" (it was not thermal, it was unstyled)
 
@@ -3555,7 +3555,7 @@ offending `file:line` if a non-ASCII character is reintroduced.
 > broken component. Please download the ZIP manually, this one time.
 
 1. Download `Free-GST-Billing-v1.10.47.zip` from the
-   [Releases page](https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/tag/v1.10.47).
+   [Releases page](https://github.com/Sandipan2005/GST-Billing-Software/releases/tag/v1.10.47).
 2. Close the app completely (click **Stop Server** first if it is running).
 3. Extract the ZIP over your existing Free GST Billing folder, replacing
    files when Windows asks.
@@ -3569,7 +3569,7 @@ automatic backup to `Documents\FreeGSTBill Backups\` before it changes
 anything.
 
 **Something went wrong?** Open an issue with a screenshot:
-https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues
+https://github.com/Sandipan2005/GST-Billing-Software/issues
 
 ---
 
@@ -8620,7 +8620,7 @@ If you still see a white screen after the update:
 1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> in the browser
    to force-reload past any cache
 2. Press <kbd>F12</kbd> → Console tab → screenshot anything in red,
-   share via [GitHub issue](https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues)
+   share via [GitHub issue](https://github.com/Sandipan2005/GST-Billing-Software/issues)
 3. Or just run `Start FreeGSTBill.bat` directly from the install
    folder while we debug
 
@@ -9774,3 +9774,4 @@ These are real correctness fixes that affect filings — not UX polish.
 
 For commits before this changelog was introduced, see `git log` on the `main`
 branch.
+
