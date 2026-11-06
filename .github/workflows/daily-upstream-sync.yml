@@ -1,0 +1,129 @@
+name: Daily Upstream Sync & Notify
+
+on:
+  schedule:
+    # Run daily at 6:00 AM UTC (11:30 AM IST)
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync-and-notify:
+    name: Check & Sync Upstream Changes
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your fork
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/IamRamgarhia/Free-GST-Billing-Software.git
+          git fetch upstream --tags
+
+      - name: Check for new upstream commits
+        id: check
+        run: |
+          # Get commits that are in upstream/main but not in your main branch
+          NEW_COMMITS=$(git log HEAD..upstream/main --oneline --no-merges)
+          COMMIT_COUNT=$(echo "$NEW_COMMITS" | grep -c '^' || echo 0)
+          
+          if [ -n "$NEW_COMMITS" ] && [ "$COMMIT_COUNT" -gt 0 ]; then
+            echo "has_updates=true" >> $GITHUB_OUTPUT
+            echo "commit_count=$COMMIT_COUNT" >> $GITHUB_OUTPUT
+            echo "commits<<EOF" >> $GITHUB_OUTPUT
+            echo "$NEW_COMMITS" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            
+            # Get latest version from upstream package.json
+            LATEST_VERSION=$(git show upstream/main:package.json | grep '"version"' | head -1 | sed 's/.*"version": "\(.*\)".*/\1/')
+            echo "latest_version=$LATEST_VERSION" >> $GITHUB_OUTPUT
+          else
+            echo "has_updates=false" >> $GITHUB_OUTPUT
+            echo "commit_count=0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create sync branch with upstream changes
+        if: steps.check.outputs.has_updates == 'true'
+        run: |
+          # Create a branch for the sync
+          SYNC_BRANCH="auto-sync-upstream-$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$SYNC_BRANCH"
+          
+          # Merge upstream changes (preserving your customizations on your feature branch)
+          git merge upstream/main --no-edit -X theirs || {
+            echo "Merge conflicts detected - creating PR for manual resolution"
+            git merge --abort
+            exit 1
+          }
+          
+          # Push the sync branch
+          git push origin "$SYNC_BRANCH"
+          echo "sync_branch=$SYNC_BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request for review
+        if: steps.check.outputs.has_updates == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ steps.check.outputs.sync_branch || 'auto-sync-upstream' }}
+          base: main
+          title: "🔄 Daily Sync: Upstream updates (${{ steps.check.outputs.commit_count }} commits)"
+          body: |
+            ## Automated Daily Upstream Sync
+            
+            **New upstream commits detected:** ${{ steps.check.outputs.commit_count }}
+            **Latest upstream version:** ${{ steps.check.outputs.latest_version }}
+            
+            ### Commits:
+            ${{ steps.check.outputs.commits }}
+            
+            ---
+            
+            ### ⚠️ Action Required
+            This PR contains the latest changes from the official repository. **Please review and test before merging.**
+            
+            ### Your Customizations
+            Your custom changes are on your feature branch (`my-custom-version`). After merging this PR:
+            1. Rebase your feature branch: `git rebase main`
+            2. Resolve any conflicts with your customizations
+            3. Test thoroughly
+            4. Push your updated feature branch
+            
+            ### Testing Checklist
+            - [ ] `npm install` - Update dependencies
+            - [ ] `npm run test` - Run all tests
+            - [ ] `npm run dev:win` - Test locally
+            - [ ] Verify your custom features still work
+            - [ ] Check data/ folder is intact (never overwritten)
+            
+            ---
+            *Generated automatically by daily sync workflow*
+
+      - name: Notify on no updates
+        if: steps.check.outputs.has_updates == 'false'
+        run: |
+          echo "✅ Already up to date with upstream (${{ steps.check.outputs.commit_count }} new commits)"
+
+      - name: Create issue for merge conflicts
+        if: failure() && steps.check.outputs.has_updates == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '⚠️ Merge Conflict: Daily Upstream Sync Failed',
+              body: `The automated daily sync from upstream failed due to merge conflicts.\n\n**Manual action required:**\n1. Clone your fork locally\n2. Run: \`git fetch upstream && git merge upstream/main\`\n3. Resolve conflicts (preserve your customizations)\n4. Test and push\n\n**Your customizations are safe** on your feature branch.`
+            })
