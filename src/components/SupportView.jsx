@@ -29,7 +29,7 @@ const AMOUNTS = [200, 500, 1000, 0];
 
 const SERVICES = [
   { icon: Code, title: 'Custom software & web apps', text: 'Websites, web apps and business tools built for how you work.' },
-  { icon: Wrench, title: 'Customising this app', text: 'Your own invoice layout, reports or features in Free GST Billing.' },
+  { icon: Wrench, title: 'Customising this app', text: 'Your own invoice layout, reports or features in Bharat GST Billing.' },
   { icon: Database, title: 'Setup & data migration', text: 'Installation, moving your data from Tally or Excel, and training.' },
   { icon: LifeBuoy, title: 'Support plans for businesses', text: 'Priority help and updates on a yearly plan.' },
   { icon: Bot, title: 'AI integration', text: 'Add AI to your product: assistants, document reading, smart search.' },
@@ -85,7 +85,7 @@ export default function SupportView() {
       <div className="page-header">
         <div>
           <h1 className="page-title">Support &amp; About <HelpButton title="Support & About" doc="support" size={16} style={{ marginLeft: 6 }} /></h1>
-          <p className="page-subtitle">Who makes Free GST Billing, and how you can help it grow</p>
+          <p className="page-subtitle">Who makes Bharat GST Billing, and how you can help it grow</p>
         </div>
       </div>
 
@@ -94,7 +94,7 @@ export default function SupportView() {
         <div>
           <h3 style={{ margin: '0 0 0.4rem', fontSize: '1.05rem' }}>Free, and it stays free <HelpButton title="Free, and it stays free" doc="support#about" size={16} /></h3>
           <p style={{ margin: 0, color: 'var(--text-secondary)', lineHeight: 1.6, maxWidth: '70ch' }}>
-            Free GST Billing is built and maintained by <b>Sandipan2005</b> in India. No ads, no account, no locked features,
+            Bharat GST Billing is built and maintained by <b>Sandipan2005</b> in India. No ads, no account, no locked features,
             and your invoices never leave this computer. If it saves you time every month, you can help keep the
             fixes and new features coming.
           </p>
@@ -160,7 +160,7 @@ export default function SupportView() {
               <h3 style={{ margin: '0 0 0.2rem', fontSize: '1rem' }}>
                 {tracker.totalReceived > 0
                   ? <>{inr(tracker.totalReceived)} received so far{tracker.supporters ? ` from ${tracker.supporters} supporter${tracker.supporters === 1 ? '' : 's'}` : ''}</>
-                  : 'Be the first to support Free GST Billing'}
+                  : 'Be the first to support Bharat GST Billing'}
                 {' '}<HelpButton title="Supporters" doc="support#supporters-card" size={16} />
               </h3>
               <p style={{ margin: 0, fontSize: '0.8rem', color: 'var(--text-muted)' }}>
@@ -213,7 +213,7 @@ export default function SupportView() {
           ))}
         </div>
         <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-          <a className="btn btn-primary" href={`mailto:${EMAIL}?subject=${encodeURIComponent('Project enquiry (from Free GST Billing)')}`}>
+          <a className="btn btn-primary" href={`mailto:${EMAIL}?subject=${encodeURIComponent('Project enquiry (from Bharat GST Billing)')}`}>
             <Mail size={16} /> Email {EMAIL}
           </a>
           <a className="btn btn-secondary" href={SITE} target="_blank" rel="noopener noreferrer"><Globe size={16} /> github.com/Sandipan2005</a>

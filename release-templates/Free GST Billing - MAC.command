@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Free GST Billing — macOS launcher.
+# Bharat GST Billing — macOS launcher.
 #
 # Double-click in Finder → macOS opens this in Terminal.app. We
 # detect state (Node? installed?) and offer a minimal menu, then

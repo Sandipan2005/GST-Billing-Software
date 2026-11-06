@@ -67,9 +67,9 @@ The download ZIP holds a **launcher for each system**, a plain-English **`READ M
 
 ```
 Free-GST-Billing/
-├── Free GST Billing - WINDOWS.hta    ← Windows: double-click this
-├── Free GST Billing - MAC.command    ← macOS
-├── Free GST Billing - LINUX.sh       ← Linux / NAS
+├── Bharat GST Billing - WINDOWS.hta    ← Windows: double-click this
+├── Bharat GST Billing - MAC.command    ← macOS
+├── Bharat GST Billing - LINUX.sh       ← Linux / NAS
 ├── READ ME FIRST.txt                 ← step-by-step, in plain English
 └── _system/                          ← the app (hidden after install)
 ```
@@ -86,9 +86,9 @@ Free-GST-Billing/
 2. Right-click the ZIP → Extract All → pick a folder you'll remember
 3. Open the EXTRACTED folder. Each launcher is named after the system it is for
    — double-click yours:
-       Free GST Billing - WINDOWS.hta     (opens a window with buttons)
-       Free GST Billing - MAC.command     (opens Terminal)
-       Free GST Billing - LINUX.sh        (opens Terminal — chmod +x first if needed)
+       Bharat GST Billing - WINDOWS.hta     (opens a window with buttons)
+       Bharat GST Billing - MAC.command     (opens Terminal)
+       Bharat GST Billing - LINUX.sh        (opens Terminal — chmod +x first if needed)
 ```
 
 > ⚠ **Extract the ZIP first.** Windows lets you double-click the launcher
@@ -103,7 +103,7 @@ Free-GST-Billing/
 ```
 
 It fetches the latest release, installs it to
-`%LOCALAPPDATA%\Programs\Free GST Billing`, installs Node.js if you do not have
+`%LOCALAPPDATA%\Programs\Bharat GST Billing`, installs Node.js if you do not have
 it, and creates the Desktop shortcut. See [Option 1b](#option-1b-windows--one-powershell-command)
 for how to choose a different folder.
 
@@ -113,7 +113,7 @@ The launcher:
 - Creates a **Desktop shortcut** + **Start-Menu entry** so you never open the folder again
 - Starts the server and opens your browser at **http://localhost:47371**
 
-From then on, click the **Free GST Billing** icon on your Desktop: it starts the app and opens it in its own window. To update / backup / restore / move to another PC / stop the server, use the in-app **⚙ Control Panel** in the sidebar (or the launcher in the app folder). No batch files, no CMD windows.
+From then on, click the **Bharat GST Billing** icon on your Desktop: it starts the app and opens it in its own window. To update / backup / restore / move to another PC / stop the server, use the in-app **⚙ Control Panel** in the sidebar (or the launcher in the app folder). No batch files, no CMD windows.
 
 > **☁ Can I host it online (Railway, Render, Supabase)?** Not yet. The app has no login on its server, so anyone who found the address could read or delete your books, and it keeps its data as files, not in a database. [Why, and what to do instead](https://github.com/Sandipan2005/GST-Billing-Software/wiki/security#host-online). Using it from a phone or tablet on the same Wi-Fi is planned for the update on Saturday 7 November 2026.
 
@@ -155,7 +155,7 @@ More screenshots, next to the steps they show, in the [documentation](https://gi
   - [Sharing & Export](#outbox_tray-sharing--export)
   - [Customization](#gear-customization)
 - [Quick Start / Installation](#quick-start--installation)
-- [The Free GST Billing icon](#the-free-gst-billing-icon)
+- [The Bharat GST Billing icon](#the-free-gst-billing-icon)
 - [How to Self-File GST Returns](#how-to-self-file-gst-returns)
 - [Bharat GST Billing vs Paid Alternatives](#-comparison-free-gst-billing-software-vs-paid-alternatives)
 - [Tech Stack](#tech-stack)
@@ -183,9 +183,9 @@ You need: Windows 10/11 PC, ~50 MB free disk, your business name + bank details 
 1. **[Download the ZIP](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip)** — always the latest version.
    (Do **not** use the green *Code -> Download ZIP* button — that gives the source code without the built app.)
 2. Right-click the downloaded ZIP → **Extract All** → pick a folder you'll remember (e.g. `Documents\FreeGSTBill`)
-3. Open the **extracted** folder → double-click **`Free GST Billing - WINDOWS`** (each launcher is named after the system it is for)
+3. Open the **extracted** folder → double-click **`Bharat GST Billing - WINDOWS`** (each launcher is named after the system it is for)
 4. Click **Install**. It installs Node.js for you if you do not have it, then sets everything up. Takes 1–2 minutes the first time
-5. The app opens by itself at `http://localhost:47371`, and a **Free GST Billing** icon is on your Desktop for next time
+5. The app opens by itself at `http://localhost:47371`, and a **Bharat GST Billing** icon is on your Desktop for next time
 
 > **Easier: one line, no ZIP, no warnings.** Press **Windows + R**, paste this, press **Enter**:
 > `powershell -ExecutionPolicy Bypass -c "[Net.ServicePointManager]::SecurityProtocol='Tls12'; irm https://raw.githubusercontent.com/Sandipan2005/GST-Billing-Software/main/install.ps1 | iex"`
@@ -489,14 +489,14 @@ powershell -ExecutionPolicy Bypass -c "[Net.ServicePointManager]::SecurityProtoc
 curl -fsSL https://raw.githubusercontent.com/Sandipan2005/GST-Billing-Software/main/install.sh | bash
 ```
 
-It checks the computer, downloads the release (packages included), installs to `%LOCALAPPDATA%\Programs\Free GST Billing` / `~/Applications/Free GST Billing` / `~/.local/share/free-gst-billing`, adds an icon (Desktop + Start menu, a Mac app, a Linux menu entry) and opens the app in its own window. **The same line updates or repairs** an existing install in place: `_system/data` is backed up first and never touched. Remove with `-Uninstall` (Windows: `& ([scriptblock]::Create((irm <url>/install.ps1))) -Uninstall`) or `| bash -s -- --uninstall`; data is only deleted if you type `DELETE`.
+It checks the computer, downloads the release (packages included), installs to `%LOCALAPPDATA%\Programs\Bharat GST Billing` / `~/Applications/Bharat GST Billing` / `~/.local/share/free-gst-billing`, adds an icon (Desktop + Start menu, a Mac app, a Linux menu entry) and opens the app in its own window. **The same line updates or repairs** an existing install in place: `_system/data` is backed up first and never touched. Remove with `-Uninstall` (Windows: `& ([scriptblock]::Create((irm <url>/install.ps1))) -Uninstall`) or `| bash -s -- --uninstall`; data is only deleted if you type `DELETE`.
 
 ### Option 1: Windows — extract, then double-click the launcher (no terminal)
 
 1. **Download the ZIP** → [click here](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip) or grab the latest from [Releases](https://github.com/Sandipan2005/GST-Billing-Software/releases)
 2. **Extract** it anywhere (e.g. `Documents\FreeGSTBill`) — right-click the ZIP → *Extract All*
-3. Open the extracted folder and **double-click** `Free GST Billing - WINDOWS.hta`
-4. Click **Install** once. When it finishes, the app opens by itself at **http://localhost:47371**, and a **Free GST Billing** icon is put on your Desktop and in the Start menu
+3. Open the extracted folder and **double-click** `Bharat GST Billing - WINDOWS.hta`
+4. Click **Install** once. When it finishes, the app opens by itself at **http://localhost:47371**, and a **Bharat GST Billing** icon is put on your Desktop and in the Start menu
 
 That's it. The launcher installs Node.js if you don't have it. From then on, click the Desktop icon: it starts the app and opens it. Update, Backup, Restore, Move to another PC and Stop Server are in the app's **⚙ Control Panel**, and in the launcher in the app folder.
 
@@ -512,7 +512,7 @@ That's it. The launcher installs Node.js if you don't have it. From then on, cli
 The one-line install (Option 0) takes the folder from `FREEGSTBILL_DIR`. In PowerShell:
 
 ```powershell
-$env:FREEGSTBILL_DIR = 'D:\Apps\Free GST Billing'
+$env:FREEGSTBILL_DIR = 'D:\Apps\Bharat GST Billing'
 [Net.ServicePointManager]::SecurityProtocol='Tls12'; irm https://raw.githubusercontent.com/Sandipan2005/GST-Billing-Software/main/install.ps1 | iex
 ```
 
@@ -535,9 +535,9 @@ For live-reload development:
 npm run dev              # dev server on http://localhost:5173 · API on http://localhost:47371
 ```
 
-### The Free GST Billing icon
+### The Bharat GST Billing icon
 
-Every install (the launcher, the one-line command, Mac and Linux) puts a **Free GST Billing** icon on your computer: the blue **B**, on the Desktop and in the Start menu on Windows. Click it every day: it starts the app if it is not running and opens it in its own window. Update, backup, restart and stop are in the app's **⚙ Control Panel**.
+Every install (the launcher, the one-line command, Mac and Linux) puts a **Bharat GST Billing** icon on your computer: the blue **B**, on the Desktop and in the Start menu on Windows. Click it every day: it starts the app if it is not running and opens it in its own window. Update, backup, restart and stop are in the app's **⚙ Control Panel**.
 
 > Use only this icon. Don't use the browser's own **Install app** button (in Chrome or Edge's address bar): that icon opens a window but cannot start the app, so after a restart it only shows "Needs a Quick Start". If you already have one, right-click it and choose **Uninstall**.
 
@@ -845,19 +845,19 @@ Find the message you see. **None of these touch your invoices**: they stay in th
 
 | You see | What to do |
 |---|---|
-| **"Some files are missing"** or **"extract the ZIP first"** | The app can't run from inside the ZIP. Right-click the ZIP → **Extract All**, open the new folder, then double-click **Free GST Billing - WINDOWS**. |
+| **"Some files are missing"** or **"extract the ZIP first"** | The app can't run from inside the ZIP. Right-click the ZIP → **Extract All**, open the new folder, then double-click **Bharat GST Billing - WINDOWS**. |
 | **"Windows protected your PC"** | The app isn't code-signed (a certificate costs about $300 a year). Click **More info → Run anyway**. |
-| Mac: **"could not be executed because you do not have appropriate access privileges"** | Open **Terminal**, type `chmod +x ` (with a space), drag **Free GST Billing - MAC** into the window, press Enter, and open it again. Downloads from v1.10.82 don't need this. |
+| Mac: **"could not be executed because you do not have appropriate access privileges"** | Open **Terminal**, type `chmod +x ` (with a space), drag **Bharat GST Billing - MAC** into the window, press Enter, and open it again. Downloads from v1.10.82 don't need this. |
 | Mac: **"cannot be opened because Apple cannot check it"** / **"unidentified developer"** | The app isn't signed by Apple. **Control-click** the file → **Open** → **Open**, once. Or **System Settings → Privacy & Security → Open Anyway**. |
 | **"Node.js … is too old"**, **`npm ERR!`**, or a file named **`npm-debug.log`** in `_system` | The PC has an old Node.js. **v1.10.81 and later fix this themselves**: click **Install** or **Open App** again. On an older version: install **Node.js LTS** from [nodejs.org](https://nodejs.org), delete **only** `_system\node_modules`, then click **Install**. Never delete `_system\data`. |
 | **"could not install the app's dependencies"** / **"cannot reach the internet"** | The first install needs the internet. Check the connection; in an office, a proxy or firewall may block `registry.npmjs.org`. Click **Install** again: it carries on where it stopped. |
 | **"Still starting…"** / **"The server has not answered in 90 seconds"** | The first start after an install or update is slow while antivirus checks the new files. Wait a minute and open <http://localhost:47371>. Still nothing? Close the black window and open the app again from its icon. |
-| **"Free GST Billing is already installed on this computer, in: …"** | You extracted a new ZIP into a new folder. Your invoices are in the folder it names: click **Update the installed copy** in the launcher, then delete the new folder. |
+| **"Bharat GST Billing is already installed on this computer, in: …"** | You extracted a new ZIP into a new folder. Your invoices are in the folder it names: click **Update the installed copy** in the launcher, then delete the new folder. |
 | **"The app cannot write to its own folder"** | Don't keep it in `C:\Program Files`. Move the whole Free-GST-Billing folder to Documents or `D:\` and open it from there. |
 | **"Drive … is almost full"** | The install needs about 400 MB free. Empty the Recycle Bin or delete old downloads. |
 | **"Node.js was downloaded but will not run"** | Antivirus removed it. Add the app folder to its exclusions and click **Install** again. |
 | **"Install Node.js LTS now?"** (winget) | The app couldn't download Node.js itself and offers Windows' own installer. Type **Y** to accept (Windows may ask permission), or install it yourself from the page it opens. |
-| **"Cannot connect to server"**, **"This site can't be reached"**, or a blank page | The app isn't running. Click the **Free GST Billing** icon on your Desktop. |
+| **"Cannot connect to server"**, **"This site can't be reached"**, or a blank page | The app isn't running. Click the **Bharat GST Billing** icon on your Desktop. |
 | The update finished but nothing changed | Reload the page with **Ctrl + F5**. |
 | Forgot the app PIN | In the app folder (next to the launcher), create an empty text file named `RESET-PIN` and reload the app. The PIN is removed; invoices aren't touched. |
 | Linux / Mac / NAS: **"Node.js … is too old"** or **"not installed"** | The message lists the command for your system (`apt`, `dnf`, `pacman`, `apk`, `brew` or nvm). Install Node.js 20, then open the launcher again. |
@@ -893,7 +893,7 @@ Yes. Bharat GST Billing supports **22 countries** with locale-correct currency f
 Yes. You can add unlimited business profiles (each with its own GSTIN, bank accounts, logo, signature, and country setting) under **Settings → Business Profile → Add New Profile**, and switch between them from the business name at the top of the sidebar. Each one can have its own invoice numbering.
 
 ### Does it run on Mac or Linux?
-The `.hta` launcher is Windows-only, but the app itself works on macOS and Linux — a NAS included — from the release ZIP (`Free GST Billing - LINUX.sh`) or via `npm install` + `npm start`. See the [Quick Start](#quick-start--installation) section. From v1.10.66, **Control Panel → Update Now** also works on Linux / NAS installs made from the release ZIP (it needs `unzip` or python3); restart the app, or its container, afterwards.
+The `.hta` launcher is Windows-only, but the app itself works on macOS and Linux — a NAS included — from the release ZIP (`Bharat GST Billing - LINUX.sh`) or via `npm install` + `npm start`. See the [Quick Start](#quick-start--installation) section. From v1.10.66, **Control Panel → Update Now** also works on Linux / NAS installs made from the release ZIP (it needs `unzip` or python3); restart the app, or its container, afterwards.
 
 ### What happens to my data when the app updates?
 Updates only refresh the app code and dependencies. Your `data/` folder (invoices, clients, products, settings) and `Saved Invoices/` PDF archive are **never touched**. The updater also saves a backup ZIP to `Documents\FreeGSTBill Backups` before it changes anything.

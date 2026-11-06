@@ -19,7 +19,7 @@ const inr = (n) => `₹${Number(n).toLocaleString('en-IN')}`;
 
 // A different line each day, so the card doesn't read as the same banner.
 const LINES = [
-  'Free GST Billing is free, with no ads and no paid version. It keeps going because users chip in.',
+  'Bharat GST Billing is free, with no ads and no paid version. It keeps going because users chip in.',
   'One developer builds this app in spare hours. A small UPI payment pays for the next fix.',
   'No subscription, no locked features. If the app saves you time, help keep it free for everyone.',
   'Every bug you report and every rupee you send goes into the next update.',
@@ -36,11 +36,11 @@ export default function SupportNudge({ invoiceCount, onOpen }) {
   const line = LINES[Math.floor(now.getTime() / 86400000) % LINES.length];
   const goal = tracker?.goal;
   return (
-    <div className="glass-panel" role="note" aria-label="Support Free GST Billing"
+    <div className="glass-panel" role="note" aria-label="Support Bharat GST Billing"
       style={{ padding: '0.9rem 1.25rem', marginBottom: '1.25rem', display: 'flex', gap: '0.9rem', alignItems: 'center', flexWrap: 'wrap' }}>
       <Heart size={22} style={{ color: '#e11d48', flexShrink: 0 }} />
       <div style={{ flex: '1 1 300px', minWidth: 0 }}>
-        <div style={{ fontWeight: 700 }}>{invoiceCount} invoices made with Free GST Billing <HelpButton title="The support card" doc="dashboard#support-card" size={16} /></div>
+        <div style={{ fontWeight: 700 }}>{invoiceCount} invoices made with Bharat GST Billing <HelpButton title="The support card" doc="dashboard#support-card" size={16} /></div>
         <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{line}</div>
         {tracker && tracker.totalReceived > 0 && (
           <div style={{ fontSize: '0.8rem', marginTop: '0.4rem' }}>

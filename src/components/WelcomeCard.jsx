@@ -10,7 +10,7 @@ import { SUPPORT_NUDGE_MIN_INVOICES } from '../utils/supporters';
 import HelpButton from './HelpButton';
 
 const KEY = 'freegstbill_welcomeCard';
-const SHARE_TEXT = 'I use Free GST Billing for my GST invoices. It is free, works offline and keeps the data on your own PC: https://github.com/Sandipan2005/GST-Billing-Software';
+const SHARE_TEXT = 'I use Bharat GST Billing for my GST invoices. It is free, works offline and keeps the data on your own PC: https://github.com/Sandipan2005/GST-Billing-Software';
 
 const isClosed = () => { try { return localStorage.getItem(KEY) === 'closed'; } catch { return false; } };
 

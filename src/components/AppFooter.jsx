@@ -25,7 +25,7 @@ export default function AppFooter({ onOpenSupport }) {
         padding: '0.3rem 0.85rem', borderRadius: 999, background: 'var(--card-bg)', border: '1px solid var(--border)',
         backdropFilter: 'blur(12px)',
       }}>
-        <span>Free GST Billing{version ? ` v${version}` : ''}</span>
+        <span>Bharat GST Billing{version ? ` v${version}` : ''}</span>
         <span aria-hidden="true">·</span>
         <a href="https://github.com/Sandipan2005" target="_blank" rel="noopener noreferrer" style={link}>by Sandipan2005</a>
         <span aria-hidden="true">·</span>

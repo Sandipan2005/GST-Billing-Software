@@ -1,4 +1,4 @@
-# Free GST Billing - one-line install, update and repair for Windows.
+# Bharat GST Billing - one-line install, update and repair for Windows.
 #
 #   Press Windows + R, paste this line, press Enter:
 #   powershell -ExecutionPolicy Bypass -c "[Net.ServicePointManager]::SecurityProtocol='Tls12'; irm https://raw.githubusercontent.com/Sandipan2005/GST-Billing-Software/main/install.ps1 | iex"
@@ -60,8 +60,8 @@ function Get-IconFolders {
   return @{ Desktop = [Environment]::GetFolderPath('Desktop'); Programs = [Environment]::GetFolderPath('Programs'); Startup = [Environment]::GetFolderPath('Startup') }
 }
 
-# The app folder a "Free GST Billing" shortcut opens. The launcher's runs
-# "...\Free GST Billing - WINDOWS.hta", this installer's runs
+# The app folder a "Bharat GST Billing" shortcut opens. The launcher's runs
+# "...\Bharat GST Billing - WINDOWS.hta", this installer's runs
 # "...\_system\start-windows.ps1": the first quoted path either way.
 function Get-LinkRoot([string]$lnk) {
   $a = [string](New-Object -ComObject WScript.Shell).CreateShortcut($lnk).Arguments
@@ -81,13 +81,13 @@ function Find-Install {
   foreach ($dir in @($f.Desktop, $f.Programs)) {
     # One unreadable shortcut must not stop the other being checked.
     try {
-      $lnk = Join-Path $dir 'Free GST Billing.lnk'
+      $lnk = Join-Path $dir 'Bharat GST Billing.lnk'
       if (-not (Test-Path -LiteralPath $lnk)) { continue }
       $r = Get-LinkRoot $lnk
       if ($r -and (Test-Path -LiteralPath (Join-Path $r '_system\server.js'))) { return $r }
     } catch { }
   }
-  return (Join-Path $env:LOCALAPPDATA 'Programs\Free GST Billing')
+  return (Join-Path $env:LOCALAPPDATA 'Programs\Bharat GST Billing')
 }
 
 function Test-Writable([string]$dir) {
@@ -201,19 +201,19 @@ function New-AppShortcut([string]$path, [string]$sys) {
 
 function Install-App {
   Write-Host ''
-  Write-Host '  Free GST Billing - install or update'
+  Write-Host '  Bharat GST Billing - install or update'
   Write-Host ''
 
   # --- [1/4] -----------------------------------------------------------------
   Step '[1/4] Checking this computer'
   if ([Environment]::OSVersion.Version.Major -lt 10) {
-    Fail 'This computer runs an old Windows.' 'Free GST Billing needs Windows 10 or 11 (Node.js no longer runs on Windows 7 or 8).'
+    Fail 'This computer runs an old Windows.' 'Bharat GST Billing needs Windows 10 or 11 (Node.js no longer runs on Windows 7 or 8).'
   }
   $dest = Find-Install
   $sys = Join-Path $dest '_system'
   $isUpdate = Test-Path -LiteralPath (Join-Path $sys 'server.js')
   if (-not (Test-Writable $dest)) {
-    Fail "This folder cannot be written to: $dest" 'Close any program using it, or choose another folder: $env:FREEGSTBILL_DIR = ''D:\Free GST Billing'' and run the line again.'
+    Fail "This folder cannot be written to: $dest" 'Close any program using it, or choose another folder: $env:FREEGSTBILL_DIR = ''D:\Bharat GST Billing'' and run the line again.'
   }
   $free = Get-FreeMB $dest
   if ($free -lt $NeedFreeMB) {
@@ -225,7 +225,7 @@ function Install-App {
   # Left over by an install that was interrupted.
   Get-ChildItem -LiteralPath $dest -Directory -Force -Filter '.install-tmp-*' -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
   Ok
-  if ($isUpdate) { Write-Host "        Found Free GST Billing in $dest - updating it. Your data stays as it is." }
+  if ($isUpdate) { Write-Host "        Found Bharat GST Billing in $dest - updating it. Your data stays as it is." }
 
   # --- [2/4] -----------------------------------------------------------------
   # Unpacked inside the app folder itself: the same drive, so the files can be
@@ -250,13 +250,13 @@ function Install-App {
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     try { [IO.Compression.ZipFile]::ExtractToDirectory($zip, $unpacked) } catch {
       if ($_.Exception.InnerException -is [IO.PathTooLongException] -or $_.Exception -is [IO.PathTooLongException]) {
-        Fail "The folder path is too long for Windows: $dest" 'Install to a shorter one: run $env:FREEGSTBILL_DIR = ''C:\Free GST Billing'' in PowerShell, then the install line there.'
+        Fail "The folder path is too long for Windows: $dest" 'Install to a shorter one: run $env:FREEGSTBILL_DIR = ''C:\Bharat GST Billing'' in PowerShell, then the install line there.'
       }
       Fail 'The downloaded file could not be unpacked (damaged download, or the disk is full).' 'Run the same line again.'
     }
     $inner = Get-ChildItem -LiteralPath $unpacked -Directory | Where-Object { Test-Path -LiteralPath (Join-Path $_.FullName '_system\server.js') } | Select-Object -First 1
     if (-not $inner -or -not (Test-Path -LiteralPath (Join-Path $inner.FullName '_system\node_modules\express\package.json'))) {
-      Fail 'The downloaded file is not a complete Free GST Billing package.' 'Run the same line again. If it happens again, report it: https://github.com/Sandipan2005/GST-Billing-Software/issues'
+      Fail 'The downloaded file is not a complete Bharat GST Billing package.' 'Run the same line again. If it happens again, report it: https://github.com/Sandipan2005/GST-Billing-Software/issues'
     }
     $newSys = Join-Path $inner.FullName '_system'
     $backup = if ($isUpdate) { Backup-Data $sys } else { $null }
@@ -281,7 +281,7 @@ function Install-App {
     } | ForEach-Object { Remove-Item -LiteralPath $_.FullName -Recurse -Force -ErrorAction SilentlyContinue }
     $rootNames = @(Get-ChildItem -LiteralPath $inner.FullName -File -Force | ForEach-Object { $_.Name })
     Get-ChildItem -LiteralPath $dest -File -Force | Where-Object {
-      ($_.Name -like 'Free GST Billing - *' -or $_.Name -eq 'READ ME FIRST.txt') -and $rootNames -notcontains $_.Name
+      ($_.Name -like 'Bharat GST Billing - *' -or $_.Name -eq 'READ ME FIRST.txt') -and $rootNames -notcontains $_.Name
     } | ForEach-Object { Remove-Item -LiteralPath $_.FullName -Force -ErrorAction SilentlyContinue }
     foreach ($f in Get-ChildItem -LiteralPath $inner.FullName -File -Force) {
       Copy-Item -LiteralPath $f.FullName -Destination (Join-Path $dest $f.Name) -Force
@@ -313,20 +313,20 @@ function Install-App {
   $f = Get-IconFolders
   foreach ($d in @($f.Desktop, $f.Programs)) {
     New-Item -ItemType Directory -Path $d -Force | Out-Null
-    New-AppShortcut (Join-Path $d 'Free GST Billing.lnk') $sys
+    New-AppShortcut (Join-Path $d 'Bharat GST Billing.lnk') $sys
   }
   Ok
-  if (-not $isUpdate -and (Ask 'Open Free GST Billing by itself when this computer starts?')) {
+  if (-not $isUpdate -and (Ask 'Open Bharat GST Billing by itself when this computer starts?')) {
     New-Item -ItemType Directory -Path $f.Startup -Force | Out-Null
-    New-AppShortcut (Join-Path $f.Startup 'Free GST Billing.lnk') $sys
+    New-AppShortcut (Join-Path $f.Startup 'Bharat GST Billing.lnk') $sys
     Write-Host '        It will open by itself when this computer starts.'
   }
 
   Write-Host ''
-  Write-Host '  Done! Opening Free GST Billing...' -ForegroundColor Green
+  Write-Host '  Done! Opening Bharat GST Billing...' -ForegroundColor Green
   & (Join-Path $sys 'start-windows.ps1') -AppWindow
   Write-Host ''
-  Write-Host '  Next time, click the Free GST Billing icon on your Desktop or in the Start menu.'
+  Write-Host '  Next time, click the Bharat GST Billing icon on your Desktop or in the Start menu.'
   Write-Host ''
   if (-not $Test) { Start-Sleep -Seconds 10 }
 }
@@ -334,13 +334,13 @@ function Install-App {
 function Uninstall-App {
   $dest = Find-Install
   $sys = Join-Path $dest '_system'
-  if (-not (Test-Path -LiteralPath (Join-Path $sys 'server.js'))) { Fail "Free GST Billing is not installed in $dest." 'Nothing was changed.' }
+  if (-not (Test-Path -LiteralPath (Join-Path $sys 'server.js'))) { Fail "Bharat GST Billing is not installed in $dest." 'Nothing was changed.' }
   Write-Host ''
-  Write-Host "  Removing Free GST Billing from $dest"
+  Write-Host "  Removing Bharat GST Billing from $dest"
   Stop-App $sys
   $f = Get-IconFolders
   foreach ($d in @($f.Desktop, $f.Programs, $f.Startup)) {
-    $lnk = Join-Path $d 'Free GST Billing.lnk'
+    $lnk = Join-Path $d 'Bharat GST Billing.lnk'
     try { if ((Test-Path -LiteralPath $lnk) -and ((Get-LinkRoot $lnk) -eq $dest.TrimEnd('\'))) { Remove-Item -LiteralPath $lnk -Force } } catch { }
   }
   # The program goes; the books stay unless the user says otherwise.
@@ -349,7 +349,7 @@ function Uninstall-App {
   # Only the app's own files beside _system: the folder may be one the user
   # chose (FREEGSTBILL_DIR, D:\, Documents) with their own files in it. The
   # same rule as uninstall-windows.ps1.
-  Get-ChildItem -LiteralPath $dest -Force | Where-Object { $_.Name -like 'Free GST Billing - *' -or $_.Name -eq 'READ ME FIRST.txt' } | Remove-Item -Recurse -Force
+  Get-ChildItem -LiteralPath $dest -Force | Where-Object { $_.Name -like 'Bharat GST Billing - *' -or $_.Name -eq 'READ ME FIRST.txt' } | Remove-Item -Recurse -Force
   Write-Host '  The app and its icons are removed.' -ForegroundColor Green
   Write-Host ''
   Write-Host "  Your invoices, clients and settings are still in $sys"
@@ -374,7 +374,7 @@ try {
   if (-not $script:KnownProblem) {
     $diskFull = ($_.Exception.HResult -eq -2147024784) -or ($msg -match 'not enough space')
     if ($diskFull) { $msg = "The disk is full.`n    Free some space, then run the same line again." }
-    else { $msg = "$msg`n    Close Free GST Billing if it is open, then run the same line again; it carries on where it stopped." }
+    else { $msg = "$msg`n    Close Bharat GST Billing if it is open, then run the same line again; it carries on where it stopped." }
   }
   Write-Host "  PROBLEM: $msg" -ForegroundColor Red
   Write-Host '    Your invoices and settings were not changed.'

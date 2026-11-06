@@ -1011,9 +1011,9 @@ console.log('\n[Audit 2026-10] Income tax marginal relief');
 
 console.log('\n[V80] Support page: UPI payment note and the supporters tracker');
 {
-  eq(upiNote('DiceCodes'), 'Free GST Billing support - DiceCodes', 'The payment note names the business that paid');
-  eq(upiNote(''), 'Free GST Billing support', 'No business name: the plain note');
-  eq(upiNote('M/S Sharma & Sons #12'), 'Free GST Billing support - M S Sharma Sons 12', 'Characters some UPI apps refuse are dropped');
+  eq(upiNote('DiceCodes'), 'Bharat GST Billing support - DiceCodes', 'The payment note names the business that paid');
+  eq(upiNote(''), 'Bharat GST Billing support', 'No business name: the plain note');
+  eq(upiNote('M/S Sharma & Sons #12'), 'Bharat GST Billing support - M S Sharma Sons 12', 'Characters some UPI apps refuse are dropped');
   eq(upiNote('A Very Long Business Name Private Limited Company of India').length <= 50, true, 'The note is kept to 50 characters');
 
   const t = parseSupporters({ totalReceived: 12450.4, supporters: 37, goal: { amount: 50000, label: 'Balance sheet' }, thanks: ['Asha', '  Ravi  ', 42, ''], updated: '2026-10-19' });

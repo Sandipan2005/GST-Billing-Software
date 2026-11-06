@@ -26,7 +26,7 @@ export default [
 
 <section id="welcome-card">
 <h2>The welcome note</h2>
-<p>A new install shows a large note at the top: <b>Thank you for choosing Free GST Billing</b>. It says the app is free for good, your data stays on your own computer and works offline, a new update comes every Saturday, and support is welcome but never needed.</p>
+<p>A new install shows a large note at the top: <b>Thank you for choosing Bharat GST Billing</b>. It says the app is free for good, your data stays on your own computer and works offline, a new update comes every Saturday, and support is welcome but never needed.</p>
 <table>
   <tr><th>Button</th><th>What it does</th></tr>
   <tr><td>${ui('Support with any amount')}</td><td>Opens <a href="shortcuts.html#support">Support &amp; About</a>, where you can pay any amount by <a href="support.html#upi">UPI</a>. Nothing is charged unless you pay yourself.</td></tr>
@@ -72,7 +72,7 @@ export default [
 
 <section id="star-banner">
 <h3>The "star on GitHub" line</h3>
-<p>A few days after you start using the app, a slim blue line may appear at the top of most screens: <b>Finding Free GST Billing useful? A star on GitHub helps other businesses find it.</b> ${ui('Star on GitHub')} opens the app's GitHub page (a free account is needed to give a star) and hides the line for good. ${ui('Already starred')} also hides it for good. ${ui('✕')} hides it for 30 days. It is never shown on the new invoice screen.</p>
+<p>A few days after you start using the app, a slim blue line may appear at the top of most screens: <b>Finding Bharat GST Billing useful? A star on GitHub helps other businesses find it.</b> ${ui('Star on GitHub')} opens the app's GitHub page (a free account is needed to give a star) and hides the line for good. ${ui('Already starred')} also hides it for good. ${ui('✕')} hides it for 30 days. It is never shown on the new invoice screen.</p>
 </section>
 
 <section id="overdue">

@@ -31,7 +31,7 @@ export default [
 <h2>Support &amp; About</h2>
 <p>Who makes the app, and how to help it grow. Free ways come first: star it on GitHub, tell another business, report a bug or ask for a feature. If you want to give money, scan the UPI QR with any UPI app, for any amount. The page also lists what DiceCodes builds for businesses: custom software and web apps, changes to this app, setup and data migration, support plans, AI integration and automation, and mobile apps.</p>
 <p>The app stays free whatever you choose. Nothing is locked, and nothing is ever printed on your invoices. Once you have made 10 invoices, the Dashboard shows a small <a href="dashboard.html#support-card">support card</a> once a day; ${ui('Not today')} hides it until tomorrow and ${ui('Hide for 30 days')} for a month.</p>
-<p>Scanning the QR fills in the payment note "Free GST Billing support - <i>your business name</i>", so DiceCodes can thank you; untick <b>Include my business name</b> to leave it out. The page also shows how much users have given so far and what it is going towards.</p>
+<p>Scanning the QR fills in the payment note "Bharat GST Billing support - <i>your business name</i>", so DiceCodes can thank you; untick <b>Include my business name</b> to leave it out. The page also shows how much users have given so far and what it is going towards.</p>
 <p>Once a month at most, a one-line note at the top of the app asks for a star on GitHub. ${ui('✕')} hides it for 30 days; ${ui('Star on GitHub')} or ${ui('Already starred')} hides it for good. It never appears while you are making an invoice.</p>
 </section>
 
@@ -102,13 +102,13 @@ export default [
 
 <section id="install-as-app">
 <h2>Opening it like a desktop app</h2>
-<p>It already is one. The <b>Free GST Billing</b> icon (the blue <b>B</b>) on your Desktop and in the Start menu starts the app and opens it in its own window, with no tabs or address bar.</p>
+<p>It already is one. The <b>Bharat GST Billing</b> icon (the blue <b>B</b>) on your Desktop and in the Start menu starts the app and opens it in its own window, with no tabs or address bar.</p>
 <p>Don't use the browser's own ${ui('Install app')} button (in Chrome or Edge's address bar). That makes a second icon which opens a window but cannot start the app, so after a restart it only shows "Needs a Quick Start". If you have one, right-click it and choose ${ui('Uninstall')}.</p>
 </section>
 
 <section id="app-not-running">
 <h2>"Needs a Quick Start"</h2>
-<p>If the app's engine is not running, the page says <b>Bharat GST Billing Needs a Quick Start</b>. Your data is safe. Double-click the <b>Free GST Billing</b> icon on your Desktop or in the Start menu: it starts the app, and the page carries on by itself once it is running. An app icon made by Chrome or Edge cannot start the app; use ours, and remove the other one (right-click it, then ${ui('Uninstall')}).</p>
+<p>If the app's engine is not running, the page says <b>Bharat GST Billing Needs a Quick Start</b>. Your data is safe. Double-click the <b>Bharat GST Billing</b> icon on your Desktop or in the Start menu: it starts the app, and the page carries on by itself once it is running. An app icon made by Chrome or Edge cannot start the app; use ours, and remove the other one (right-click it, then ${ui('Uninstall')}).</p>
 </section>
 `,
 },
@@ -163,18 +163,18 @@ export default [
   <li><strong>"The app cannot write to its own folder"</strong>: see <a href="#no-permission">The app is not allowed to write</a>.</li>
   <li><strong>"Drive C:\\ is almost full"</strong>: the install needs about 400 MB. See <a href="#disk-full">The disk is full</a>.</li>
   <li><strong>"too old"</strong>, <strong><code>npm ERR!</code></strong> or <strong>"Unsupported engine"</strong>: see <a href="#old-node">Node.js is too old</a>.</li>
-  <li><strong>"Free GST Billing is already installed on this computer"</strong>: see <a href="#already-installed">Already installed on this computer</a>.</li>
+  <li><strong>"Bharat GST Billing is already installed on this computer"</strong>: see <a href="#already-installed">Already installed on this computer</a>.</li>
 </ul>
 <p>Never delete the <code>data</code> folder to fix an install.</p>
 </section>
 
 <section id="already-installed">
 <h3>"Already installed on this computer"</h3>
-<p>You may see: <strong>"Already installed on this computer"</strong> in the launcher, or <strong>"Free GST Billing is already installed on this computer, in: ..."</strong> in the black window.</p>
+<p>You may see: <strong>"Already installed on this computer"</strong> in the launcher, or <strong>"Bharat GST Billing is already installed on this computer, in: ..."</strong> in the black window.</p>
 <p>You extracted a new ZIP into a new folder. Your invoices are in the copy it names, so it does not make a second, empty copy.</p>
 <ol>
   <li>Click ${ui('Update the installed copy')}. It uses the files you just extracted, so no download is needed.</li>
-  <li>When it finishes, open the app from your <b>Free GST Billing</b> shortcut as usual.</li>
+  <li>When it finishes, open the app from your <b>Bharat GST Billing</b> shortcut as usual.</li>
   <li>The new folder is not needed after that. You can delete it.</li>
 </ol>
 </section>
@@ -214,7 +214,7 @@ export default [
 <p>You may see: <strong>"Failed to fetch"</strong> (Chrome, Edge), <strong>"NetworkError when attempting to fetch resource"</strong> (Firefox) or <strong>"Load failed"</strong> (Safari), often after words like <i>Restore failed:</i> or <i>Export failed:</i>; a red dot on <b>Control Panel</b> in the menu; a page saying <strong>"Bharat GST Billing Needs a Quick Start"</strong>; <strong>"Could not check the PIN. Is the app still running?"</strong>; or the browser's own <strong>"This site can't be reached"</strong> or a blank page.</p>
 <p>The app's engine (the server on your computer) is not running: the computer was restarted, the app was stopped, or it closed. Nothing already saved is lost.</p>
 <ol>
-  <li>Double-click the <b>Free GST Billing</b> icon on your Desktop or in the Start menu (Mac: <b>Free GST Billing - MAC</b>; Linux: the start command in <a href="install-linux.html#start">Step 3</a>). It starts the app if needed and opens the right address. If a small launcher window opens instead (an install from before version 1.10.83, the first time), click ${ui('Open App')}.</li>
+  <li>Double-click the <b>Bharat GST Billing</b> icon on your Desktop or in the Start menu (Mac: <b>Bharat GST Billing - MAC</b>; Linux: the start command in <a href="install-linux.html#start">Step 3</a>). It starts the app if needed and opens the right address. If a small launcher window opens instead (an install from before version 1.10.83, the first time), click ${ui('Open App')}.</li>
   <li>Wait up to a minute. The "Needs a Quick Start" page carries on by itself once the app is running; otherwise press <kbd>F5</kbd> to reload.</li>
   <li>Try what failed again.</li>
 </ol>
@@ -224,9 +224,9 @@ export default [
 <section id="port-in-use">
 <h3>"Port 47371 is busy" or "address already in use"</h3>
 <p>You may see: <strong>"Port 47371 is busy, trying 47372..."</strong>, <strong><code>EADDRINUSE</code></strong> or <strong>"address already in use"</strong>. These lines only appear when the app is started from a Terminal or Command Prompt.</p>
-<p>Another program, or a second copy of Free GST Billing, already uses that port (the "door" the browser knocks on). The app picks the next free one by itself and saves it in <code>data\\port.txt</code>; the launcher reads that file, so ${ui('Open App')} goes to the right address.</p>
+<p>Another program, or a second copy of Bharat GST Billing, already uses that port (the "door" the browser knocks on). The app picks the next free one by itself and saves it in <code>data\\port.txt</code>; the launcher reads that file, so ${ui('Open App')} goes to the right address.</p>
 <ol>
-  <li>Always open the app with its <b>Free GST Billing</b> icon (or the launcher's ${ui('Open App')}), not a bookmark of <code>localhost:47371</code>, which may now be the other program.</li>
+  <li>Always open the app with its <b>Bharat GST Billing</b> icon (or the launcher's ${ui('Open App')}), not a bookmark of <code>localhost:47371</code>, which may now be the other program.</li>
   <li>If the launcher says it has not answered, close it and click ${ui('Open App')} once more: it reads the new port.</li>
   <li>The <a href="control-panel.html#about">Control Panel</a> shows the port the app is using.</li>
   <li>Two copies of the app on one computer? Keep using the one with your invoices; see <a href="#already-installed">Already installed</a>.</li>
@@ -279,7 +279,7 @@ export default [
 <p>The browser kept parts of the old version after an update. The app normally reloads itself once to fix this.</p>
 <ol>
   <li>Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> (Mac: <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).</li>
-  <li>If it comes back, close every tab of the app, then open it again from its <b>Free GST Billing</b> icon.</li>
+  <li>If it comes back, close every tab of the app, then open it again from its <b>Bharat GST Billing</b> icon.</li>
 </ol>
 </section>
 
@@ -501,7 +501,7 @@ export default [
 
 <section id="restore-failed">
 <h3>A backup or restore failed</h3>
-<p>You may see: <strong>"This file doesn't look like a Free GST Billing backup."</strong>, <strong>"Could not read the file"</strong>, <strong>"Import failed: ..."</strong>, <strong>"Restore failed: ..."</strong>, <strong>"Backup failed: ..."</strong> or <strong>"No data folder found - nothing to back up."</strong></p>
+<p>You may see: <strong>"This file doesn't look like a Bharat GST Billing backup."</strong>, <strong>"Could not read the file"</strong>, <strong>"Import failed: ..."</strong>, <strong>"Restore failed: ..."</strong>, <strong>"Backup failed: ..."</strong> or <strong>"No data folder found - nothing to back up."</strong></p>
 <p>A restore saves what you have now first, so a failed one changes nothing.</p>
 <ol>
   <li>Read the end of the message: <a href="#cannot-connect">Failed to fetch</a>, <a href="#payload-too-large">Request body too large</a>, <a href="#disk-full">disk full</a> and <a href="#no-permission">permission</a> each have their own entry.</li>
@@ -556,8 +556,8 @@ export default [
 <section id="mac-blocked">
 <h3>The Mac will not open the launcher</h3>
 <ul>
-  <li><strong>"could not be executed because you do not have appropriate access privileges"</strong>: open <b>Terminal</b> (Applications → Utilities), type <code>chmod +x </code> with a space after it, drag <b>Free GST Billing - MAC</b> into the Terminal window, press <kbd>Return</kbd>, and open the file again. Downloads from v1.10.82 do not need this. See <a href="terminal.html#example">the step-by-step example</a>.</li>
-  <li><strong>"cannot be opened because Apple cannot check it for malicious software"</strong> or <strong>"unidentified developer"</strong>: the app is not signed by Apple. Hold <kbd>Control</kbd>, click <b>Free GST Billing - MAC</b>, choose <b>Open</b>, then <b>Open</b> again. Only the first time. Or use <b>System Settings → Privacy &amp; Security → Open Anyway</b>.</li>
+  <li><strong>"could not be executed because you do not have appropriate access privileges"</strong>: open <b>Terminal</b> (Applications → Utilities), type <code>chmod +x </code> with a space after it, drag <b>Bharat GST Billing - MAC</b> into the Terminal window, press <kbd>Return</kbd>, and open the file again. Downloads from v1.10.82 do not need this. See <a href="terminal.html#example">the step-by-step example</a>.</li>
+  <li><strong>"cannot be opened because Apple cannot check it for malicious software"</strong> or <strong>"unidentified developer"</strong>: the app is not signed by Apple. Hold <kbd>Control</kbd>, click <b>Bharat GST Billing - MAC</b>, choose <b>Open</b>, then <b>Open</b> again. Only the first time. Or use <b>System Settings → Privacy &amp; Security → Open Anyway</b>.</li>
   <li><strong>"Node.js is not installed"</strong> or <strong>too old</strong>: see <a href="#old-node">Node.js is too old</a>.</li>
 </ul>
 <p>Updating on a Mac: never drag a new download over the old folder; see <a href="update.html#mac">Mac: other ways</a>.</p>
@@ -570,9 +570,9 @@ export default [
 
 <section id="linux-permission">
 <h3>"Permission denied" or "bash: not found"</h3>
-<p>You may see: <strong>"Permission denied"</strong> when starting <code>./Free GST Billing - LINUX.sh</code>, or <strong>"bash: not found"</strong> on a NAS.</p>
+<p>You may see: <strong>"Permission denied"</strong> when starting <code>./Bharat GST Billing - LINUX.sh</code>, or <strong>"bash: not found"</strong> on a NAS.</p>
 <ol>
-  <li>Start it through bash, which needs no permission change: <code>cd ~/Free-GST-Billing &amp;&amp; bash "Free GST Billing - LINUX.sh"</code>.</li>
+  <li>Start it through bash, which needs no permission change: <code>cd ~/Free-GST-Billing &amp;&amp; bash "Bharat GST Billing - LINUX.sh"</code>.</li>
   <li>No bash (Alpine, some NAS systems): install it, for example <code>sudo apk add bash</code>.</li>
   <li>"Permission denied" while the app writes files: see <a href="#no-permission">The app is not allowed to write</a>.</li>
 </ol>

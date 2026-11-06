@@ -2,7 +2,7 @@
 // Previous / Next order at the foot of each page.
 
 export const SITE = {
-  name: 'Free GST Billing',
+  name: 'Bharat GST Billing',
   // The folder is also the web address, so it carries the words people search.
   folder: 'free-gst-software-documentation',
   // Where the folder is published. Used for canonical links, the sitemap,
