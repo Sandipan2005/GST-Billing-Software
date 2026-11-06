@@ -1,0 +1,97 @@
+name: Upstream Sync Check
+
+on:
+  schedule:
+    # Daily at 06:00 UTC; adjust as needed
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      upstream_branch:
+        description: 'Upstream branch to sync from'
+        required: false
+        default: 'main'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check-and-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: my-custom-version
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream and fetch
+        env:
+          UPSTREAM_BRANCH: ${{ github.event.inputs.upstream_branch || 'main' }}
+        run: |
+          git remote add upstream https://github.com/IamRamgarhia/Free-GST-Billing-Software.git || true
+          git fetch upstream "$UPSTREAM_BRANCH" --tags
+
+      - name: Check for new upstream commits
+        id: check
+        env:
+          UPSTREAM_BRANCH: ${{ github.event.inputs.upstream_branch || 'main' }}
+        run: |
+          COUNT=$(git rev-list --count HEAD..upstream/"$UPSTREAM_BRANCH")
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          if [ "$COUNT" -gt 0 ]; then
+            echo "has_updates=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "commits<<EOF"
+              git log --oneline --no-decorate -n 50 HEAD..upstream/"$UPSTREAM_BRANCH"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+            echo "upstream_sha=$(git rev-parse --short upstream/$UPSTREAM_BRANCH)" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_updates=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Prepare sync branch
+        if: steps.check.outputs.has_updates == 'true'
+        env:
+          UPSTREAM_BRANCH: ${{ github.event.inputs.upstream_branch || 'main' }}
+        run: |
+          git checkout -B auto-sync/upstream
+          # Merge upstream; if conflicts occur, fail the job so a human resolves safely.
+          git merge --no-edit "upstream/$UPSTREAM_BRANCH"
+
+      - name: Create or update pull request
+        if: steps.check.outputs.has_updates == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: auto-sync/upstream
+          base: my-custom-version
+          delete-branch: false
+          title: "chore: sync ${{ steps.check.outputs.count }} upstream commit(s) (${{ steps.check.outputs.upstream_sha }})"
+          body: |
+            Automated daily upstream sync check found new commits on `IamRamgarhia/Free-GST-Billing-Software`.
+
+            **Upstream commits (recent):**
+            ```
+            ${{ steps.check.outputs.commits }}
+            ```
+
+            ## Before merging
+            - [ ] Back up `data/` and `Saved Invoices/` (and any local business data)
+            - [ ] Review conflicts/customizations (branding, GST rules, POS, reports)
+            - [ ] Run `npm install` if dependencies changed
+            - [ ] Run `npm run test` and smoke test `npm run dev:win`
+
+            This PR targets `my-custom-version` to preserve your customizations. Do not merge blindly.
+          labels: upstream-sync, automated
+          commit-message: "chore: merge upstream changes"
+
+      - name: No updates
+        if: steps.check.outputs.has_updates != 'true'
+        run: echo "Fork is up to date with upstream/main."

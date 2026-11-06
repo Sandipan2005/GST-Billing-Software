@@ -46,3 +46,8 @@ docs-site/out/
 
 # Playwright MCP browser-tool scratch files
 .playwright-mcp/
+
+# Local update automation artifacts
+backups/
+scripts/update-automation/logs/
+.commandcode/
