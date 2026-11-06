@@ -1769,6 +1769,192 @@ textarea.form-input { resize: vertical; min-height: 60px; }
   border: 1px solid #cbd5e1 !important;
 }
 
+/* Professional accounting default: restrained navy/teal hierarchy, crisp
+   paper-safe surfaces, and predictable spacing for A4/A5 PDF output. */
+.template-modern .inv-header-modern {
+  background: #0f766e !important;
+  color: #ffffff !important;
+  border-bottom: 4px solid #134e4a !important;
+}
+.template-modern .inv-header-modern *,
+.template-modern .inv-header-modern .inv-title,
+.template-modern .inv-header-modern .inv-business-name {
+  color: #ffffff !important;
+}
+.template-modern .inv-meta-label {
+  color: #ccfbf1 !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.template-modern .inv-meta-value {
+  color: #ffffff !important;
+}
+.template-modern .inv-section-label {
+  color: #0f766e !important;
+  border-bottom: 2px solid #99f6e4 !important;
+  letter-spacing: 0.06em;
+}
+.template-modern .inv-table thead th {
+  background: #172b4d !important;
+  color: #ffffff !important;
+  border-color: #172b4d !important;
+}
+.template-modern .inv-table tbody tr:nth-child(even) td {
+  background: #f8fafc;
+}
+.template-modern .inv-total-final {
+  background: #f0fdfa !important;
+  border-top-color: #0f766e !important;
+}
+.template-modern .inv-total-final span:first-child {
+  color: #172b4d !important;
+}
+.template-modern .inv-total-final span:last-child {
+  color: #0f766e !important;
+}
+
+.template-classic .inv-header {
+  background: #f8fafc !important;
+  border-top: 5px solid #172b4d !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+.template-classic .inv-title,
+.template-classic .inv-business-name,
+.template-classic .inv-meta-value {
+  color: #172b4d !important;
+}
+.template-classic .inv-meta-label {
+  color: #64748b !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.template-classic .inv-section-label {
+  color: #0f766e !important;
+  border-bottom: 2px solid #99f6e4 !important;
+}
+.template-classic .inv-table thead th {
+  background: #172b4d !important;
+  color: #ffffff !important;
+  border-color: #172b4d !important;
+}
+.template-classic .inv-total-final {
+  background: #f0fdfa !important;
+  border-top-color: #0f766e !important;
+}
+.template-classic .inv-total-final span:first-child {
+  color: #172b4d !important;
+}
+.template-classic .inv-total-final span:last-child {
+  color: #0f766e !important;
+}
+
+.invoice-preview-container {
+  border: 1px solid #dbe3ec;
+  border-radius: 0;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+}
+.invoice-preview-container .inv-header {
+  border-bottom: 1px solid #dbe3ec;
+}
+.invoice-preview-container .inv-parties {
+  margin: 0 1.25rem 0.85rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #fbfdff;
+}
+.invoice-preview-container .inv-table {
+  border: 1px solid #dbe3ec;
+  border-left: 0;
+  border-right: 0;
+}
+.invoice-preview-container .inv-table th,
+.invoice-preview-container .inv-table td {
+  border-color: #dbe3ec;
+}
+.invoice-preview-container .inv-footer {
+  border-top-color: #cbd5e1;
+}
+
+.print-settings-shell {
+  overflow: visible;
+}
+.print-settings-shell .print-settings-layout {
+  margin-top: 1.5rem !important;
+}
+.print-settings-shell .print-settings-preview-pane {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+.print-settings-shell .print-settings-preview-pane > div:first-child {
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.print-settings-shell .print-settings-preview-pane > div:nth-child(2) {
+  border: 1px solid var(--border-color);
+}
+.print-settings-shell .print-settings-preview-pane > div:last-child {
+  border: 1px solid #dbe3ec;
+  box-shadow: inset 0 0 0 1px #f8fafc;
+}
+.print-settings-shell .print-settings-body > div {
+  border-color: var(--border-color) !important;
+}
+
+@media print {
+  .invoice-preview-container {
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  .invoice-preview-container .inv-parties {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
+/* Keep the Executive/Corporate preset aligned with the application brand.
+   This is intentionally last so its paper-safe palette wins over legacy
+   preset rules and over dark-mode application colors. */
+.invoice-preview-container.template-corporate .inv-header {
+  background: #172b4d !important;
+  background-image: none !important;
+  border-bottom: 4px solid #0f766e !important;
+}
+.invoice-preview-container.template-corporate .inv-header *,
+.invoice-preview-container.template-corporate .inv-title,
+.invoice-preview-container.template-corporate .inv-business-name,
+.invoice-preview-container.template-corporate .inv-meta-value {
+  color: #ffffff !important;
+}
+.invoice-preview-container.template-corporate .inv-meta-label {
+  color: #99f6e4 !important;
+}
+.invoice-preview-container.template-corporate .inv-table thead th,
+.invoice-preview-container.template-corporate .inv-th {
+  background: #172b4d !important;
+  color: #ffffff !important;
+  border-color: #172b4d !important;
+}
+.invoice-preview-container.template-corporate .inv-section-label {
+  color: #0f766e !important;
+  border-bottom-color: #99f6e4 !important;
+}
+.invoice-preview-container.template-corporate .inv-total-final {
+  background: #f0fdfa !important;
+  border-top-color: #0f766e !important;
+}
+.invoice-preview-container.template-corporate .inv-total-final span:first-child {
+  color: #172b4d !important;
+}
+.invoice-preview-container.template-corporate .inv-total-final span:last-child {
+  color: #0f766e !important;
+}
+.invoice-preview-container.template-corporate[data-user-colors="1"] .inv-table thead th,
+.invoice-preview-container.template-corporate[data-user-colors="1"] .inv-th {
+  background-color: #172b4d !important;
+  color: #ffffff !important;
+}
+
 /* ============================================================
    v1.9.2 — PRINTING MODE. html2canvas onclone adds .printing-mode
    to the clone. All light grays get forced darker so paper printers
@@ -2914,6 +3100,51 @@ kbd {
   text-decoration: none;
 }
 .toast-action:hover { background: rgba(0,0,0,0.06); }
+
+/* Resume setup remains usable on compact viewports and never gets clipped by
+   the application footer or the browser's viewport edge. */
+.resume-setup-pill {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 9998;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.5rem;
+  max-width: calc(100vw - 2rem);
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  background: hsl(var(--primary));
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(30,64,175,0.35), 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.resume-setup-pill:hover {
+  background: hsl(var(--primary) / 0.92);
+  transform: translateY(-1px);
+}
+
+.resume-setup-pill:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .resume-setup-pill {
+    right: max(0.75rem, env(safe-area-inset-right));
+    bottom: max(0.75rem, env(safe-area-inset-bottom));
+    max-width: calc(100vw - 1.5rem);
+  }
+}
 
 /* v1.10.83 - the "This screen ran into a problem" panel (ErrorBoundary.jsx). */
 .problem-panel {

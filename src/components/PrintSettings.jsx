@@ -163,16 +163,16 @@ const DESIGN_PRESETS = [
   },
   {
     id: 'retail',
-    name: 'Bold Retail',
-    icon: '▲',
-    description: 'Aggressive black + red pop. Fashion, sports, street.',
-    tag: 'Fashion · Sports',
+    name: 'Professional',
+    icon: '—',
+    description: 'Structured navy and teal for everyday business invoices.',
+    tag: 'Retail · Services',
     settings: {
       pdfTemplate: 'minimalist',
       userColorsEnabled: true,
       pdfPrimaryText: '#0a0a0a', pdfMutedText: '#404040',
-      pdfAccent: '#dc2626', pdfAccentText: '#ffffff',
-      pdfHeaderBg: '#ffffff', pdfDividerColor: '#0a0a0a',
+      pdfAccent: '#0f766e', pdfAccentText: '#ffffff',
+      pdfHeaderBg: '#ffffff', pdfDividerColor: '#cbd5e1',
       pdfDarkenOnPrint: true,
       fontFamily: 'sans', fontWeight: 'bold', fontSize: 'medium',
       lineSpacing: 'normal', allCaps: true,
@@ -360,7 +360,7 @@ export default function PrintSettings() {
   const sample = buildSampleInvoice(profile);
 
   return (
-    <div className="glass-panel p-6 mb-6">
+    <div className="glass-panel p-6 mb-6 print-settings-shell">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
         <div>
           <h3 className="section-title" style={{ marginTop: 0, marginBottom: '0.25rem' }}>
@@ -382,7 +382,7 @@ export default function PrintSettings() {
               toast('Setup wizard will re-open on next page reload', 'info');
             }}
             title="Show the first-run wizard again">
-            🚀 Run setup wizard
+            Run setup wizard
           </button>
           <button className="btn btn-secondary" style={{ fontSize: '0.82rem' }} onClick={reset}>
             <RotateCcw size={14} /> Reset defaults
@@ -419,7 +419,7 @@ export default function PrintSettings() {
         marginBottom: '1rem',
       }}>
         <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '0.6rem', gap: '0.5rem', flexWrap: 'wrap' }}>
-          <strong style={{ fontSize: '0.9rem' }}>⚡ Business type <HelpButton title="Business type preset" doc="print-settings#business-type" size={16} style={{ marginLeft: 6 }} /> <span style={{ fontSize: '0.65rem', fontWeight: 500, color: 'var(--text-muted)', marginLeft: 6 }}>sets up to a dozen settings to match your workflow</span></strong>
+          <strong style={{ fontSize: '0.9rem' }}>Business type <HelpButton title="Business type preset" doc="print-settings#business-type" size={16} style={{ marginLeft: 6 }} /> <span style={{ fontSize: '0.65rem', fontWeight: 500, color: 'var(--text-muted)', marginLeft: 6 }}>sets up to a dozen settings to match your workflow</span></strong>
           <span style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>Pick this first. Every setting below is still editable.</span>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.5rem' }}>
@@ -1078,7 +1078,7 @@ export default function PrintSettings() {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
           <div>
             <h4 style={{ margin: 0, fontSize: '0.95rem', color: 'var(--primary)' }}>
-              🎨 PDF Style Editor — full control over every colour <HelpButton title="PDF Style Editor" doc="print-settings#colours" size={16} style={{ marginLeft: 6 }} />
+              PDF Style Editor — full control over every colour <HelpButton title="PDF Style Editor" doc="print-settings#colours" size={16} style={{ marginLeft: 6 }} />
             </h4>
             <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', margin: '0.25rem 0 0' }}>
               Match your brand. Every colour you change updates the live preview instantly and gets baked into your PDFs.
@@ -1292,9 +1292,9 @@ export default function PrintSettings() {
           {/* Preview mode tabs */}
           <div style={{ display: 'flex', gap: '0.25rem', background: 'var(--card)', padding: '0.25rem', borderRadius: 6 }}>
             {[
-              ['pdf', '📄 PDF (A4)'],
-              ['thermal', '🖨 Thermal (80mm)'],
-              ['both', '⊞ Split view'],
+              ['pdf', 'PDF · A4'],
+              ['thermal', 'Thermal · 80 mm'],
+              ['both', 'Both formats'],
             ].map(([key, label]) => (
               <button key={key} type="button"
                 onClick={() => setPreviewMode(key)}
