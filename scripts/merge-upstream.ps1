@@ -125,7 +125,8 @@ if (-not $SkipTest) {
         if (-not (Confirm-Action "Tests failed. Continue anyway?")) {
             exit 1
         }
-    } else {
+    }
+    else {
         Write-Color "✅ All tests passed!" $Green
     }
 }
@@ -153,7 +154,8 @@ if ($rebaseExitCode -ne 0) {
 Write-Color "✅ Rebase successful! Your customizations are updated." $Green
 
 # Push custom branch
-if (Confirm-Action "Push updated $CustomBranch to origin?") {
+$pushCustomBranch = Confirm-Action "Push updated $CustomBranch to origin?"
+if ($pushCustomBranch) {
     git push origin $CustomBranch --force-with-lease
     Write-Color "✅ Pushed to origin/$CustomBranch" $Green
 }
