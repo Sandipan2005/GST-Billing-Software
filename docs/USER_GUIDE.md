@@ -452,4 +452,4 @@ PRs welcome. The project follows
 ## Need help?
 
 - File an issue: <https://github.com/IamRamgarhia/Free-GST-Billing-Software/issues>
-- Email DiceCodes: contact@dicecodes.com
+- Email Sandipan2005: contact@yourdomain.com

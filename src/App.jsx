@@ -394,6 +394,7 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
+    document.documentElement.classList.toggle('dark', darkMode);
     localStorage.setItem('freegstbill_theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
 

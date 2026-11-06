@@ -40,7 +40,7 @@ Use the launcher: **More options → Update to the latest version**, then
 Use the **Update** button in the app. **Never drag the new folder over the
 old one on a Mac**: Finder's Replace swaps the whole folder, including
 `_system/data` with your invoices. Step by step:
-[Updating on a Mac](https://dicecodes.com/free-gst-software-documentation/update.html#mac).
+[Updating on a Mac](https://github.com/Sandipan2005/GST-Billing-Software/wiki/update#mac).
 
 #### Linux / NAS
 Run `update-unix.sh` from the `_system` folder, or extract the new ZIP over
@@ -228,7 +228,7 @@ a backup is made first.
   and logo in the app's menu* in Settings → Company → Branding (new installs
   are asked in the first setup): the top of the menu shows your logo, or your
   first letter, and your business name, for whichever business is open.
-  "by DiceCodes" stays under it.
+  "by Sandipan2005" stays under it.
 - **One icon that opens the app.** On Windows, the Free GST Billing icon (the
   blue B) on the Desktop and in the Start menu now starts the app if it is not
   running and opens it in its own window: one click, nothing else. Before, an
@@ -450,7 +450,7 @@ because Mac users could not start the app at all.
    instead. **Never drag the new folder over the old one on a Mac**: Finder's
    Replace swaps the whole folder, including `_system/data` with your
    invoices. Step-by-step:
-   [Updating on a Mac](https://dicecodes.com/free-gst-software-documentation/update.html#mac).
+      [Updating on a Mac](https://github.com/Sandipan2005/GST-Billing-Software/wiki/update#mac).
 
 #### Windows (1.10.73 and later)
 Click **Update to v1.10.82** in the sidebar, or **Settings → App Updates →
@@ -1094,16 +1094,16 @@ https://github.com/Sandipan2005/GST-Billing-Software/issues
   and always shows that invoice's own options (the app-wide defaults used to
   replace them a moment after it opened).
 - **User Guide** in the sidebar (and "Read the 5-minute guide" on the Dashboard)
-  now opens the [online documentation](https://dicecodes.com/free-gst-software-documentation/),
+  now opens the [online documentation](https://github.com/Sandipan2005/GST-Billing-Software/wiki),
   which covers every screen. The old built-in guide had fallen behind the app
   and is removed.
 - **Support & About** in the sidebar: who makes the app, free ways to help
   (star, share, report bugs), a UPI QR for anyone who wants to give, and what
-  DiceCodes builds for businesses. After 50 invoices the Dashboard shows one
+  Sandipan2005 builds for businesses. After 50 invoices the Dashboard shows one
   small thank-you card (Maybe later / Don't show again). Nothing is locked and
   nothing is printed on your invoices.
   The documentation has the same page, linked from its top bar next to the
-  name: [Support & About](https://dicecodes.com/free-gst-software-documentation/support.html).
+  name: [Support & About](https://github.com/Sandipan2005/GST-Billing-Software/wiki/support).
 - A one-line **"Star on GitHub"** note at the top of the app, at most once a
   month: first 3 days after you start using the app, then 30 days after you
   close it with ✕. **Star on GitHub** or **Already starred** hides it for good.
@@ -1116,7 +1116,7 @@ https://github.com/Sandipan2005/GST-Billing-Software/issues
   stacked top bars used to take about 140px, one of them a light strip in dark
   mode.)
 - A small floating line on the **Dashboard** shows the app version, **by
-  DiceCodes** and a **Support** link. It is only on screen, never printed.
+  Sandipan2005** and a **Support** link. It is only on screen, never printed.
 
 ## [1.10.74] - 2026-09-28
 

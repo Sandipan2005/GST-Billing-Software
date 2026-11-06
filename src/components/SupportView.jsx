@@ -20,10 +20,10 @@ import { SafePrivateSection } from './SafePrivateNote';
 const inr = (n) => `₹${Number(n).toLocaleString('en-IN')}`;
 
 const SUPPORT_UPI_ID = 'princeramgarhiaa-1@okaxis';
-const UPI_NAME = 'DiceCodes';
+const UPI_NAME = 'Sandipan2005';
 const REPO = 'https://github.com/Sandipan2005/GST-Billing-Software';
-const EMAIL = 'contact@dicecodes.com';
-const SITE = 'https://dicecodes.com';
+const EMAIL = 'contact@yourdomain.com';
+const SITE = 'https://github.com/Sandipan2005';
 // v1.10.83 - ₹200 is the smallest suggested amount; "Any amount" (0) comes last.
 const AMOUNTS = [200, 500, 1000, 0];
 
@@ -216,7 +216,7 @@ export default function SupportView() {
           <a className="btn btn-primary" href={`mailto:${EMAIL}?subject=${encodeURIComponent('Project enquiry (from Free GST Billing)')}`}>
             <Mail size={16} /> Email {EMAIL}
           </a>
-          <a className="btn btn-secondary" href={SITE} target="_blank" rel="noopener noreferrer"><Globe size={16} /> dicecodes.com</a>
+          <a className="btn btn-secondary" href={SITE} target="_blank" rel="noopener noreferrer"><Globe size={16} /> github.com/Sandipan2005</a>
         </div>
       </div>
     </div>

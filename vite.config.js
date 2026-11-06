@@ -25,6 +25,9 @@ const readActivePort = () => {
 const activeExpressPort = readActivePort();
 
 export default defineConfig({
+  resolve: {
+    alias: { "@": path.resolve(__dirname, "./src") },
+  },
   // v1.10.83 - the Problem log stamps each entry with the version of the
   // bundle that failed; it must not depend on reaching the server.
   define: {

@@ -28,7 +28,7 @@ Two private options:
    [Report a vulnerability](https://github.com/IamRamgarhia/Free-GST-Billing-Software/security/advisories/new)
    button on the Security tab. Keeps everything in one thread and lets us
    credit you on the published advisory.
-2. **Email** — Contact@dicecodes.com, with `SECURITY` in the subject.
+2. **Email** — contact@yourdomain.com, with `SECURITY` in the subject.
 
 Please include:
 

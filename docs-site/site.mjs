@@ -7,13 +7,13 @@ export const SITE = {
   folder: 'free-gst-software-documentation',
   // Where the folder is published. Used for canonical links, the sitemap,
   // social previews and llms.txt, which all need full addresses.
-  url: 'https://dicecodes.com/free-gst-software-documentation/',
-  publisher: { name: 'DiceCodes', url: 'https://dicecodes.com' },
+  url: 'https://github.com/Sandipan2005/GST-Billing-Software/wiki/',
+  publisher: { name: 'Sandipan2005', url: 'https://github.com/Sandipan2005' },
   version: '1.10.83',
-  repo: 'https://github.com/IamRamgarhia/Free-GST-Billing-Software',
+  repo: 'https://github.com/Sandipan2005/GST-Billing-Software',
   // Always the newest release: GitHub resolves this to the latest release's
   // file of exactly this name (see docs/RELEASE_CHECKLIST.md, step 4b).
-  download: 'https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest/download/Free-GST-Billing.zip',
+  download: 'https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip',
 };
 
 // Search-result titles and descriptions for the pages people search for most.

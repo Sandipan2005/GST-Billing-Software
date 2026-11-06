@@ -20,7 +20,7 @@ const P = (n) => Math.round(n * 100);
 
 // A GSTIN with a correct check digit (fake businesses, never real ones).
 const gstin = (first14) => first14 + '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('').find((c) => gstinChecksumOk(first14 + c));
-const SELLER = { businessName: 'DiceCodes', gstin: '29ABCDE1234F1ZW', address: '12 MG Road', city: 'Bengaluru', pin: '560001', state: 'Karnataka', country: 'India', phone: '+91 98450 12345', email: 'accounts@dicecodes.example' };
+const SELLER = { businessName: 'Sandipan2005', gstin: '29ABCDE1234F1ZW', address: '12 MG Road', city: 'Bengaluru', pin: '560001', state: 'Karnataka', country: 'India', phone: '+91 98450 12345', email: 'accounts@sandipan2005.example' };
 const KA_BUYER = { name: 'Lotus Traders', gstin: gstin('29AAACL1234K1Z'), address: '4 Brigade Road', city: 'Bengaluru', pin: '560025', state: 'Karnataka' };
 const MH_BUYER = { name: 'Sahyadri Books', gstin: gstin('27AAFCS5678M1Z'), address: '9 FC Road', city: 'Pune', pin: '411004', state: 'Maharashtra' };
 

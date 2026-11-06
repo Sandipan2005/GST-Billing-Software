@@ -6,6 +6,6 @@ An earlier version of this page described hosting the app on Railway, Render, Fl
 - **The server only listens on the computer it runs on** (`127.0.0.1`), so a hosting service cannot reach it without a code change that removes that protection.
 - **There is no database.** The app saves its books as files in its `data` folder, so Supabase would not be used. On most free hosting plans those files are wiped every time the service restarts.
 
-The full answer, with what to do instead, is in the guide: [Can I put it online?](https://dicecodes.com/free-gst-software-documentation/security.html#host-online)
+The full answer, with what to do instead, is in the guide: [Can I put it online?](https://github.com/Sandipan2005/GST-Billing-Software/wiki/security#host-online)
 
 **Planned:** using the app from a phone or tablet on the **same Wi-Fi** as your computer, with a PIN that the app's server checks (update on Saturday 7 November 2026). Online use may come later, only after the app has a proper login of its own. This page will say so when it does.

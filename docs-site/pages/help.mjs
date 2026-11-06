@@ -625,7 +625,7 @@ export default [
 
 <section id="copy-details">
 <h3>Sending the details another way</h3>
-<p>No GitHub account? Click ${ui('Copy details')} (or ${ui('Copy')} in the Problem log), paste it into an email to <a href="mailto:contact@dicecodes.com">contact@dicecodes.com</a> or a WhatsApp message, and add what you did just before it happened. Read it before sending; it is plain text.</p>
+<p>No GitHub account? Click ${ui('Copy details')} (or ${ui('Copy')} in the Problem log), paste it into an email to <a href="mailto:contact@yourdomain.com">contact@yourdomain.com</a> or a WhatsApp message, and add what you did just before it happened. Read it before sending; it is plain text.</p>
 </section>
 
 <section id="questions">

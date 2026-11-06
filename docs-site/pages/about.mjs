@@ -137,8 +137,8 @@ export default [
 <div class="service-grid">
 ${SERVICES.map(([t, d]) => `  <div class="service"><strong>${t}</strong><span>${d}</span></div>`).join('\n')}
 </div>
-<p>Email <a href="mailto:contact@dicecodes.com?subject=${encodeURIComponent('Project enquiry (from the Free GST Billing docs)')}">contact@dicecodes.com</a> or visit <a href="${SITE.publisher.url}">dicecodes.com</a>.</p>
-<p>In the app, ${ui('Email contact@dicecodes.com')} opens your email program with the subject "Project enquiry (from Free GST Billing)" filled in; say what you need and roughly when. ${ui('dicecodes.com')} opens the website. This is paid work and separate from the free app: the app stays free whether or not you hire us. For a problem with the app itself, use <a href="troubleshooting.html#report-problem">Reporting a problem</a> instead.</p>
+<p>Email <a href="mailto:contact@yourdomain.com?subject=${encodeURIComponent('Project enquiry (from the Free GST Billing docs)')}">contact@yourdomain.com</a> or visit <a href="${SITE.publisher.url}">${SITE.publisher.name}</a>.</p>
+<p>In the app, ${ui('Email contact@yourdomain.com')} opens your email program with the subject "Project enquiry (from Free GST Billing)" filled in; say what you need and roughly when. ${ui(SITE.publisher.name)} opens the website. This is paid work and separate from the free app: the app stays free whether or not you hire us. For a problem with the app itself, use <a href="troubleshooting.html#report-problem">Reporting a problem</a> instead.</p>
 </section>
 
 <section id="in-the-app">

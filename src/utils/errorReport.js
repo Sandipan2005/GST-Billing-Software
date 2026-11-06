@@ -8,7 +8,7 @@
 // business or a person may survive into it.
 
 export const ISSUE_NEW_URL = 'https://github.com/Sandipan2005/GST-Billing-Software/issues/new';
-export const TROUBLESHOOTING_URL = 'https://dicecodes.com/free-gst-software-documentation/troubleshooting.html';
+export const TROUBLESHOOTING_URL = 'https://github.com/Sandipan2005/GST-Billing-Software/wiki/troubleshooting';
 export const MAX_ISSUE_URL = 7500;
 export const MAX_LOG_ENTRIES = 50;
 

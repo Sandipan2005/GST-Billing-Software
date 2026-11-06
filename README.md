@@ -20,11 +20,11 @@ Your data never leaves your computer. No cloud and no limits. Open source, so yo
 
 **A free invoice builder and invoice maker** for shop owners, freelancers, consultants, traders and small businesses in India: make a GST invoice, quotation (proforma / estimate), bill of supply, credit note or delivery challan in minutes and save it as a PDF. Free billing software and a free, open-source alternative to Tally, Vyapar, Zoho and myBillBook.
 
-<a href="https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip"><img src="https://img.shields.io/github/v/release/Sandipan2005/GST-Billing-Software?style=for-the-badge&label=%E2%AC%87%EF%B8%8F%20Download&color=16a34a&labelColor=15803d" alt="Download the latest version" height="48"></a>&nbsp;&nbsp;<a href="https://dicecodes.com/free-gst-software-documentation/"><img src="https://img.shields.io/badge/%F0%9F%93%96%20Documentation-Read%20the%20guide-2563eb?style=for-the-badge&labelColor=1d4ed8" alt="Read the documentation" height="48"></a>
+<a href="https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip"><img src="https://img.shields.io/github/v/release/Sandipan2005/GST-Billing-Software?style=for-the-badge&label=%E2%AC%87%EF%B8%8F%20Download&color=16a34a&labelColor=15803d" alt="Download the latest version" height="48"></a>&nbsp;&nbsp;<a href="https://github.com/Sandipan2005/GST-Billing-Software/wiki"><img src="https://img.shields.io/badge/%F0%9F%93%96%20Documentation-Read%20the%20guide-2563eb?style=for-the-badge&labelColor=1d4ed8" alt="Read the documentation" height="48"></a>
 
 <sub>Always the newest version · about 16 MB · Windows, macOS and Linux in one ZIP · <a href="https://github.com/Sandipan2005/GST-Billing-Software/releases/latest">release notes</a></sub>
 
-[⬇ Download ZIP](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip) &nbsp;|&nbsp; [📦 Releases](https://github.com/Sandipan2005/GST-Billing-Software/releases) &nbsp;|&nbsp; [📖 Documentation](https://dicecodes.com/free-gst-software-documentation/) &nbsp;|&nbsp; [⚡ 3-Step Install](#quick-start--installation) &nbsp;|&nbsp; [🧾 First Invoice in 5 Minutes](#your-first-invoice-in-5-minutes) &nbsp;|&nbsp; [📸 Screenshots](#screenshots) &nbsp;|&nbsp; [🐛 Report Bug](https://github.com/Sandipan2005/GST-Billing-Software/issues)
+[⬇ Download ZIP](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip) &nbsp;|&nbsp; [📦 Releases](https://github.com/Sandipan2005/GST-Billing-Software/releases) &nbsp;|&nbsp; [📖 Documentation](https://github.com/Sandipan2005/GST-Billing-Software/wiki) &nbsp;|&nbsp; [⚡ 3-Step Install](#quick-start--installation) &nbsp;|&nbsp; [🧾 First Invoice in 5 Minutes](#your-first-invoice-in-5-minutes) &nbsp;|&nbsp; [📸 Screenshots](#screenshots) &nbsp;|&nbsp; [🐛 Report Bug](https://github.com/Sandipan2005/GST-Billing-Software/issues)
 
 </div>
 
@@ -57,7 +57,7 @@ Your data never leaves your computer. No cloud and no limits. Open source, so yo
 
 **That is the complete list.** No analytics, no ads, no error-tracking service, and no server of ours that receives your data.
 
-**[Read the full answer: every address the app connects to, and more ways to check →](https://dicecodes.com/free-gst-software-documentation/security.html)**
+**[Read the full answer: every address the app connects to, and more ways to check →](https://github.com/Sandipan2005/GST-Billing-Software/wiki/security)**
 
 ---
 
@@ -115,7 +115,7 @@ The launcher:
 
 From then on, click the **Free GST Billing** icon on your Desktop: it starts the app and opens it in its own window. To update / backup / restore / move to another PC / stop the server, use the in-app **⚙ Control Panel** in the sidebar (or the launcher in the app folder). No batch files, no CMD windows.
 
-> **☁ Can I host it online (Railway, Render, Supabase)?** Not yet. The app has no login on its server, so anyone who found the address could read or delete your books, and it keeps its data as files, not in a database. [Why, and what to do instead](https://dicecodes.com/free-gst-software-documentation/security.html#host-online). Using it from a phone or tablet on the same Wi-Fi is planned for the update on Saturday 7 November 2026.
+> **☁ Can I host it online (Railway, Render, Supabase)?** Not yet. The app has no login on its server, so anyone who found the address could read or delete your books, and it keeps its data as files, not in a database. [Why, and what to do instead](https://github.com/Sandipan2005/GST-Billing-Software/wiki/security#host-online). Using it from a phone or tablet on the same Wi-Fi is planned for the update on Saturday 7 November 2026.
 
 ---
 
@@ -138,7 +138,7 @@ Real screens from the app, with a made-up demo business (DiceCodes, fake GSTIN a
   </tr>
 </table>
 
-More screenshots, next to the steps they show, in the [documentation](https://dicecodes.com/free-gst-software-documentation/).
+More screenshots, next to the steps they show, in the [documentation](https://github.com/Sandipan2005/GST-Billing-Software/wiki).
 
 ---
 
@@ -248,7 +248,7 @@ Once you're comfortable with the basics, explore:
 - **GSTR-2B Reconciliation** — download your 2B JSON from gst.gov.in, click Import in our 2B tab — we auto-match against your purchase records and flag mismatches.
 - **TDS / TCS** — Customize → tick TDS or TCS, pick a section (194Q / 206C(1H) / etc.). The Reports view aggregates these for Form 26Q / 27EQ filing.
 
-📖 **Full walkthrough** — see [docs/USER_GUIDE.md](docs/USER_GUIDE.md) or the [online documentation](https://dicecodes.com/free-gst-software-documentation/), which the app's **User Guide** button opens.
+📖 **Full walkthrough** — see [docs/USER_GUIDE.md](docs/USER_GUIDE.md) or the [online documentation](https://github.com/Sandipan2005/GST-Billing-Software/wiki), which the app's **User Guide** button opens.
 
 ---
 
@@ -467,7 +467,7 @@ If we priced every 🆕 feature at the going rate on the paid alternatives:
 
 ## Quick Start / Installation
 
-> **New to computers?** Follow the step-by-step guides, with every click explained: [Windows](https://dicecodes.com/free-gst-software-documentation/install.html) · [Mac](https://dicecodes.com/free-gst-software-documentation/install-mac.html) · [Linux / NAS](https://dicecodes.com/free-gst-software-documentation/install-linux.html) · [Updating](https://dicecodes.com/free-gst-software-documentation/update.html) · [Using the Terminal](https://dicecodes.com/free-gst-software-documentation/terminal.html)
+> **New to computers?** Follow the step-by-step guides, with every click explained: [Windows](https://github.com/Sandipan2005/GST-Billing-Software/wiki/install-windows) · [Mac](https://github.com/Sandipan2005/GST-Billing-Software/wiki/install-mac) · [Linux / NAS](https://github.com/Sandipan2005/GST-Billing-Software/wiki/install-linux) · [Updating](https://github.com/Sandipan2005/GST-Billing-Software/wiki/update) · [Using the Terminal](https://github.com/Sandipan2005/GST-Billing-Software/wiki/terminal)
 
 ### Prerequisites
 
@@ -543,7 +543,7 @@ Every install (the launcher, the one-line command, Mac and Linux) puts a **Free 
 
 ### Online hosting (Railway, Render, Supabase): not yet
 
-The app has no login on its server yet, so it must not be put on the internet. See [Can I put it online?](https://dicecodes.com/free-gst-software-documentation/security.html#host-online).
+The app has no login on its server yet, so it must not be put on the internet. See [Can I put it online?](https://github.com/Sandipan2005/GST-Billing-Software/wiki/security#host-online).
 
 ## How to Self-File GST Returns
 
@@ -712,7 +712,7 @@ The deep-dive material lives in **[docs/](./docs/)**:
 
 ## Why Is This Free?
 
-Free GST Billing Software is built and maintained by [DiceCodes](mailto:Contact@dicecodes.com). It is:
+Free GST Billing Software is built and maintained by [Sandipan2005](https://github.com/Sandipan2005). It is:
 
 - **Open-source** under the MIT license — fork it, modify it, use it commercially
 - **Community-driven** — features are built based on what users actually need
@@ -737,7 +737,7 @@ If the app saves you time, you can help keep it going:
 - 🐛 **[Report a bug](https://github.com/Sandipan2005/GST-Billing-Software/issues/new?template=bug_report.yml) or [ask for a feature](https://github.com/Sandipan2005/GST-Billing-Software/issues/new?template=feature_request.yml)**: fixes and features ship every Saturday
 - 💛 **UPI, any amount:** `princeramgarhiaa-1@okaxis` (also as a QR code in the app, under **Support & About**)
 
-**Work with DiceCodes:** custom software and web apps, customising this app for your business, setup and data migration, support plans, AI integration and automation, and mobile apps. [contact@dicecodes.com](mailto:contact@dicecodes.com)
+**Work with Sandipan2005:** custom software and web apps, customising this app for your business, setup and data migration, support plans, AI integration and automation, and mobile apps. [contact@yourdomain.com](mailto:contact@yourdomain.com)
 
 ---
 
@@ -862,7 +862,7 @@ Find the message you see. **None of these touch your invoices**: they stay in th
 | Forgot the app PIN | In the app folder (next to the launcher), create an empty text file named `RESET-PIN` and reload the app. The PIN is removed; invoices aren't touched. |
 | Linux / Mac / NAS: **"Node.js … is too old"** or **"not installed"** | The message lists the command for your system (`apt`, `dnf`, `pacman`, `apk`, `brew` or nvm). Install Node.js 20, then open the launcher again. |
 
-**Still stuck?** [Report a problem](https://github.com/Sandipan2005/GST-Billing-Software/issues/new?template=bug_report.yml) with the message you see and a screenshot (hide your GSTIN and bank details). If the app doesn't start, add what `node -v` and `npm -v` show in Command Prompt. More answers: [troubleshooting guide](https://dicecodes.com/free-gst-software-documentation/troubleshooting.html).
+**Still stuck?** [Report a problem](https://github.com/Sandipan2005/GST-Billing-Software/issues/new?template=bug_report.yml) with the message you see and a screenshot (hide your GSTIN and bank details). If the app doesn't start, add what `node -v` and `npm -v` show in Command Prompt. More answers: [troubleshooting guide](https://github.com/Sandipan2005/GST-Billing-Software/wiki/troubleshooting).
 
 ---
 
@@ -908,7 +908,7 @@ CSV import is supported today for clients and products. Direct Tally XML import 
 
 ## Contact & Support
 
-- **Email:** [Contact@dicecodes.com](mailto:Contact@dicecodes.com)
+- **Email:** [contact@yourdomain.com](mailto:contact@yourdomain.com)
 - **Report a problem:** [bug report form](https://github.com/Sandipan2005/GST-Billing-Software/issues/new?template=bug_report.yml) · **Ask for a feature:** [feature form](https://github.com/Sandipan2005/GST-Billing-Software/issues/new?template=feature_request.yml) (fixes and features ship every Saturday)
 - **Releases:** [GitHub Releases](https://github.com/Sandipan2005/GST-Billing-Software/releases)
 - **Discussions:** *(coming soon)*
@@ -925,15 +925,15 @@ This project is licensed under the [MIT License](LICENSE) — free to use, modif
 
 ### Ready to stop paying for billing software?
 
-[**⬇ Download Now**](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip) &nbsp;·&nbsp; [⭐ **Star on GitHub**](https://github.com/Sandipan2005/GST-Billing-Software) &nbsp;·&nbsp; [📖 **Read the User Guide**](docs/USER_GUIDE.md) &nbsp;·&nbsp; [🐛 **Report an Issue**](https://github.com/Sandipan2005/GST-Billing-Software/issues) &nbsp;·&nbsp; [📧 **Email DiceCodes**](mailto:Contact@dicecodes.com)
+[**⬇ Download Now**](https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing-v1.10.83.zip) &nbsp;·&nbsp; [⭐ **Star on GitHub**](https://github.com/Sandipan2005/GST-Billing-Software) &nbsp;·&nbsp; [📖 **Read the User Guide**](docs/USER_GUIDE.md) &nbsp;·&nbsp; [🐛 **Report an Issue**](https://github.com/Sandipan2005/GST-Billing-Software/issues) &nbsp;·&nbsp; [📧 **Email**](mailto:contact@yourdomain.com)
 
 ---
 
-**Free GST Billing Software** by [DiceCodes](mailto:Contact@dicecodes.com) · MIT Licensed · v1.10.42
+**Free GST Billing Software** by [Sandipan2005](https://github.com/Sandipan2005) · MIT Licensed · v1.10.42
 
 <sub>Free GST billing software India · Free GST invoice software for small business · Open source GST billing software · Free alternative to Tally Prime Vyapar Zoho Books ClearTax myBillBook Marg ERP · No subscription invoice software · Offline billing software India · GSTR-1 GSTR-3B filing software free · GSTR-2B reconciliation tool free · TDS Form 26Q TCS Form 27EQ software · Section 194Q 206C(1H) TCS calculator with ₹50 lakh threshold · UTGST invoice software · CGST SGST IGST auto calculator · E-way bill JSON generator free · HSN SAC code invoice generator · Bill of Supply generator · Delivery Challan software · Credit Note Debit Note software · Proforma invoice estimate software · Composition scheme invoice · UPI QR invoice maker · Thermal receipt printer software 58mm 80mm · Direct vector thermal print software · POS billing software free India · Retail shop kirana billing software · Restaurant cafe billing software · Freelancer consultant invoice software India · Multi-currency invoice generator (USD EUR GBP AED SGD AUD JPY) 22 countries · Country-aware VAT SST MwSt TVA PPN tax labels · Recurring invoice software · Payment receipt voucher software · Bulk PDF invoice export · Google Drive backup billing software · Automatic daily backup + Trash bin · Multi-business multi-GSTIN switcher · Multi-language invoice Hindi Tamil Marathi Bengali · Dark mode PWA billing app · Rich-text Terms & Conditions with 13 India presets · OCR bill scan tesseract · Ctrl+K command palette · Split-view live PDF preview · Income Tax (ITR) computation old vs new regime 234B 234C · Client credit balance carry-forward · Watermark DUPLICATE DRAFT PDF · Rule 48 multi-copy (Original Duplicate Triplicate) · WhatsApp share invoice PDF · Self-file GST return software · GST invoice software without subscription · No signup no login billing software · Vyapar alternative open source · Tally alternative free · Zoho Books alternative · ClearTax alternative · myBillBook alternative · Marg ERP alternative · Made in India</sub>
 
-Made in India 🇮🇳 · [DiceCodes](https://dicecodes.com)
+Made in India 🇮🇳 · [Sandipan2005](https://github.com/Sandipan2005)
 
 </div>
 

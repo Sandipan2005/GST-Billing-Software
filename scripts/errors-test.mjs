@@ -27,9 +27,9 @@ const LINUX_EDGE = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, l
 
 console.log('\n[Redaction] private details are removed');
 const secret = 'Client 27AAPFU0939F1ZV (PAN AAPFU0939F) phone +91 98765 43210 / 9876543210, mail ramesh.k@gmail.com, '
-  + 'UPI ramesh@okaxis, IFSC HDFC0001234, a/c 50100234567890, path C:\\Users\\Ramesh\\FreeGST\\data and /home/dicecodes/app';
+  + 'UPI ramesh@okaxis, IFSC HDFC0001234, a/c 50100234567890, path C:\\Users\\Ramesh\\FreeGST\\data and /home/sandipan2005/app';
 const r = redact(secret);
-for (const leak of ['27AAPFU0939F1ZV', 'AAPFU0939F', '98765', '43210', '9876543210', 'ramesh.k@gmail.com', 'ramesh@okaxis', 'HDFC0001234', '50100234567890', 'Ramesh', 'dicecodes']) {
+for (const leak of ['27AAPFU0939F1ZV', 'AAPFU0939F', '98765', '43210', '9876543210', 'ramesh.k@gmail.com', 'ramesh@okaxis', 'HDFC0001234', '50100234567890', 'Ramesh', 'sandipan2005']) {
   ok(!r.includes(leak), `"${leak}" is gone`, r);
 }
 for (const tag of ['[gstin]', '[pan]', '[phone]', '[email]', '[upi-id]', '[ifsc]', '[number]', '[user]']) ok(r.includes(tag), `marked ${tag}`, r);
