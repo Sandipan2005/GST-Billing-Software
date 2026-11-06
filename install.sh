@@ -27,7 +27,7 @@
 
 set -eu
 
-ZIP_URL='https://github.com/IamRamgarhia/Free-GST-Billing-Software/releases/latest/download/Free-GST-Billing.zip'
+ZIP_URL='https://github.com/Sandipan2005/GST-Billing-Software/releases/latest/download/Free-GST-Billing.zip'
 NODE_VERSION=v20.19.0
 NEED_FREE_MB=600
 TEST=${FREEGSTBILL_TEST:-}

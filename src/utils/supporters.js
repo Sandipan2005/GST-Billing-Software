@@ -4,7 +4,7 @@
 // GitHub updates every copy, no release needed. It comes from the internet, so
 // everything in it is checked before it is shown (parseSupporters).
 
-export const SUPPORTERS_URL = 'https://raw.githubusercontent.com/IamRamgarhia/Free-GST-Billing-Software/main/supporters.json';
+export const SUPPORTERS_URL = 'https://raw.githubusercontent.com/Sandipan2005/GST-Billing-Software/main/supporters.json';
 
 // The note UPI apps fill in when the QR is scanned, so the maintainer can see
 // who paid: "Free GST Billing support - DiceCodes". Kept to letters,

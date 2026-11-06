@@ -21,7 +21,7 @@ const inr = (n) => `₹${Number(n).toLocaleString('en-IN')}`;
 
 const SUPPORT_UPI_ID = 'princeramgarhiaa-1@okaxis';
 const UPI_NAME = 'DiceCodes';
-const REPO = 'https://github.com/IamRamgarhia/Free-GST-Billing-Software';
+const REPO = 'https://github.com/Sandipan2005/GST-Billing-Software';
 const EMAIL = 'contact@dicecodes.com';
 const SITE = 'https://dicecodes.com';
 // v1.10.83 - ₹200 is the smallest suggested amount; "Any amount" (0) comes last.
