@@ -21,7 +21,7 @@ if [ -x "$SYSTEM_DIR/node/bin/node" ]; then export PATH="$SYSTEM_DIR/node/bin:$P
 clear
 echo
 echo "  ┌────────────────────────────────────────────────┐"
-echo "  │   Free GST Billing Software                    │"
+echo "  │   Bharat GST Billing                    │"
 echo "  │   Open-source · Offline-first · No signup      │"
 echo "  └────────────────────────────────────────────────┘"
 echo

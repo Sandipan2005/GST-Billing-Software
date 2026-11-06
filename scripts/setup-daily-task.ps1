@@ -37,7 +37,7 @@ $trigger = New-ScheduledTaskTrigger -Daily -At $Time
 $settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -RunOnlyIfNetworkAvailable
 $principal = New-ScheduledTaskPrincipal -UserId "SYSTEM" -LogonType ServiceAccount -RunLevel Highest
 
-Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings -Principal $principal -Force -Description "Checks for upstream updates to Free GST Billing Software daily"
+Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings -Principal $principal -Force -Description "Checks for upstream updates to Bharat GST Billing daily"
 
 Write-Host "✅ Scheduled task created: $TaskName" -ForegroundColor Green
 Write-Host "⏰ Runs daily at $Time" -ForegroundColor Cyan

@@ -1,6 +1,6 @@
 <#>
 .SYNOPSIS
-    Daily Upstream Update Checker for Free GST Billing Software
+    Daily Upstream Update Checker for Bharat GST Billing
     Checks for new commits from the official repository and notifies you.
 
 .DESCRIPTION

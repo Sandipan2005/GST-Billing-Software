@@ -782,8 +782,8 @@ planned with the 7 Nov guards.
 **Reported by:** the maintainer (2026-10-30): the icon "should have all things
 like running server" when opened next time.
 
-**Symptom** - after the computer was restarted, a Free GST Billing Software
-icon on the Desktop opened a window saying *Free GST Billing Software Needs a
+**Symptom** - after the computer was restarted, a Bharat GST Billing
+icon on the Desktop opened a window saying *Bharat GST Billing Needs a
 Quick Start*, and nothing started.
 
 **Cause** - that icon was not the installer's. It was made by Chrome or Edge

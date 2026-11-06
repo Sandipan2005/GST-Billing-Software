@@ -50,7 +50,7 @@ FROM=unknown
 
 say ''
 say '============================================================'
-say ' Free GST Billing Software - Update'
+say ' Bharat GST Billing - Update'
 say '============================================================'
 say ''
 

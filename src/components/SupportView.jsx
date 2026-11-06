@@ -70,7 +70,7 @@ export default function SupportView() {
     } catch { toast(`UPI ID: ${SUPPORT_UPI_ID}`, 'info', 6000); }
   };
 
-  const shareText = `I make my GST invoices with Free GST Billing Software. It's free, works offline and keeps data on your own computer: ${REPO}`;
+  const shareText = `I make my GST invoices with Bharat GST Billing. It's free, works offline and keeps data on your own computer: ${REPO}`;
   const freeWays = [
     { icon: Star, title: 'Star it on GitHub', text: 'Helps other businesses find it.', href: REPO },
     { icon: Share2, title: 'Tell another business', text: 'Send it to a friend on WhatsApp.', href: `https://wa.me/?text=${encodeURIComponent(shareText)}` },

@@ -1,6 +1,6 @@
 <div align="center">
 
-# Free GST Billing Software — Free Forever, Works Offline, No Tracking
+# Bharat GST Billing — Free Forever, Works Offline, No Tracking
 
 ### The only GST invoicing software you'll never have to pay for.
 
@@ -145,7 +145,7 @@ More screenshots, next to the steps they show, in the [documentation](https://gi
 ## 📑 Table of Contents
 
 - [Install in 60 Seconds](#-install-in-60-seconds-windows-one-click) — *Windows one-click*
-- [Why Choose Free GST Billing Software?](#why-choose-free-gst-billing-software)
+- [Why Choose Bharat GST Billing?](#why-choose-free-gst-billing-software)
 - [Your First Invoice in 5 Minutes](#your-first-invoice-in-5-minutes) — *start here if you're new*
 - [Key Features](#key-features)
   - [Invoicing & Billing](#receipt-invoicing--billing)
@@ -157,7 +157,7 @@ More screenshots, next to the steps they show, in the [documentation](https://gi
 - [Quick Start / Installation](#quick-start--installation)
 - [The Free GST Billing icon](#the-free-gst-billing-icon)
 - [How to Self-File GST Returns](#how-to-self-file-gst-returns)
-- [Free GST Billing Software vs Paid Alternatives](#-comparison-free-gst-billing-software-vs-paid-alternatives)
+- [Bharat GST Billing vs Paid Alternatives](#-comparison-free-gst-billing-software-vs-paid-alternatives)
 - [Tech Stack](#tech-stack)
 - [Roadmap](#roadmap)
 - [Documentation](#books-documentation)
@@ -252,9 +252,9 @@ Once you're comfortable with the basics, explore:
 
 ---
 
-## Why Choose Free GST Billing Software?
+## Why Choose Bharat GST Billing?
 
-Most billing software in India — Zoho Invoice, Vyapar, Tally, myBillBook — charges you monthly, stores your financial data on their servers, and locks you in. **Free GST Billing Software is the open-source alternative that changes everything.**
+Most billing software in India — Zoho Invoice, Vyapar, Tally, myBillBook — charges you monthly, stores your financial data on their servers, and locks you in. **Bharat GST Billing is the open-source alternative that changes everything.**
 
 - **Completely free** — no subscription, no premium tier, no hidden charges, no "free trial" that expires
 - **100% offline** — runs on localhost, works without internet after installation
@@ -265,11 +265,11 @@ Most billing software in India — Zoho Invoice, Vyapar, Tally, myBillBook — c
 
 > **If you're paying for billing software, you can stop now.**
 
-### 📊 Comparison: Free GST Billing Software vs Paid Alternatives
+### 📊 Comparison: Bharat GST Billing vs Paid Alternatives
 
 Every 🆕 row below is a feature we shipped in v1.10 that competitors either paywall, cripple in the free tier, or don't offer at all.
 
-| Feature | **Free GST Billing Software** | Tally Prime | Vyapar | Zoho Books | ClearTax GST |
+| Feature | **Bharat GST Billing** | Tally Prime | Vyapar | Zoho Books | ClearTax GST |
 |---|---|---|---|---|---|
 | **Price** | ✅ **Free forever** | ₹22,500–₹67,500 one-time | ₹2,599+/year | ₹899–₹2,999/month | ~₹3,599/year+ |
 | **GST invoices (CGST/SGST/IGST)** | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -547,7 +547,7 @@ The app has no login on its server yet, so it must not be put on the internet. S
 
 ## How to Self-File GST Returns
 
-Free GST Billing Software auto-generates all the data you need for GSTR-1 and GSTR-3B filing. Here's the workflow:
+Bharat GST Billing auto-generates all the data you need for GSTR-1 and GSTR-3B filing. Here's the workflow:
 
 ```
 Step 1 ──► Enter invoices throughout the month as you normally would
@@ -712,7 +712,7 @@ The deep-dive material lives in **[docs/](./docs/)**:
 
 ## Why Is This Free?
 
-Free GST Billing Software is built and maintained by [Sandipan2005](https://github.com/Sandipan2005). It is:
+Bharat GST Billing is built and maintained by [Sandipan2005](https://github.com/Sandipan2005). It is:
 
 - **Open-source** under the MIT license — fork it, modify it, use it commercially
 - **Community-driven** — features are built based on what users actually need
@@ -868,7 +868,7 @@ Find the message you see. **None of these touch your invoices**: they stay in th
 
 ## Frequently Asked Questions
 
-### Is Free GST Billing Software really free?
+### Is Bharat GST Billing really free?
 Yes — MIT licensed open-source software. No subscription, no premium tier, no "free trial" that expires, no usage limits. The full feature set is available to every user forever. We make zero rupees from this directly.
 
 ### Can I use it as a simple free invoice maker?
@@ -884,7 +884,7 @@ The software generates **GSTR-1**, **GSTR-3B**, and **GSTR-2B reconciliation** d
 Yes, completely. After installation everything runs on `localhost:47371` on your computer. The only optional internet-using features are Google Drive backup, the in-app update notifier (checks GitHub for new versions), and WhatsApp sharing.
 
 ### Can I bill international clients?
-Yes. Free GST Billing Software supports **22 countries** with locale-correct currency formatting, country-aware tax labels (GST / VAT / SST / MwSt / TVA / PPN / Sales Tax), and amount-in-words in the right currency name (Dollars, Dirhams, Pounds, Rand, Naira, Pesos, etc.). Set your Region Preference in Settings to *International* or *Both*.
+Yes. Bharat GST Billing supports **22 countries** with locale-correct currency formatting, country-aware tax labels (GST / VAT / SST / MwSt / TVA / PPN / Sales Tax), and amount-in-words in the right currency name (Dollars, Dirhams, Pounds, Rand, Naira, Pesos, etc.). Set your Region Preference in Settings to *International* or *Both*.
 
 ### What invoice formats are supported?
 **Tax Invoice**, **Proforma / Estimate**, **Bill of Supply** (for exempt goods or non-GST sellers), **Composition scheme invoice** (with Rule 46A declaration), **Credit Note**, **Delivery Challan**.
@@ -929,7 +929,7 @@ This project is licensed under the [MIT License](LICENSE) — free to use, modif
 
 ---
 
-**Free GST Billing Software** by [Sandipan2005](https://github.com/Sandipan2005) · MIT Licensed · v1.10.42
+**Bharat GST Billing** by [Sandipan2005](https://github.com/Sandipan2005) · MIT Licensed · v1.10.42
 
 <sub>Free GST billing software India · Free GST invoice software for small business · Open source GST billing software · Free alternative to Tally Prime Vyapar Zoho Books ClearTax myBillBook Marg ERP · No subscription invoice software · Offline billing software India · GSTR-1 GSTR-3B filing software free · GSTR-2B reconciliation tool free · TDS Form 26Q TCS Form 27EQ software · Section 194Q 206C(1H) TCS calculator with ₹50 lakh threshold · UTGST invoice software · CGST SGST IGST auto calculator · E-way bill JSON generator free · HSN SAC code invoice generator · Bill of Supply generator · Delivery Challan software · Credit Note Debit Note software · Proforma invoice estimate software · Composition scheme invoice · UPI QR invoice maker · Thermal receipt printer software 58mm 80mm · Direct vector thermal print software · POS billing software free India · Retail shop kirana billing software · Restaurant cafe billing software · Freelancer consultant invoice software India · Multi-currency invoice generator (USD EUR GBP AED SGD AUD JPY) 22 countries · Country-aware VAT SST MwSt TVA PPN tax labels · Recurring invoice software · Payment receipt voucher software · Bulk PDF invoice export · Google Drive backup billing software · Automatic daily backup + Trash bin · Multi-business multi-GSTIN switcher · Multi-language invoice Hindi Tamil Marathi Bengali · Dark mode PWA billing app · Rich-text Terms & Conditions with 13 India presets · OCR bill scan tesseract · Ctrl+K command palette · Split-view live PDF preview · Income Tax (ITR) computation old vs new regime 234B 234C · Client credit balance carry-forward · Watermark DUPLICATE DRAFT PDF · Rule 48 multi-copy (Original Duplicate Triplicate) · WhatsApp share invoice PDF · Self-file GST return software · GST invoice software without subscription · No signup no login billing software · Vyapar alternative open source · Tally alternative free · Zoho Books alternative · ClearTax alternative · myBillBook alternative · Marg ERP alternative · Made in India</sub>
 

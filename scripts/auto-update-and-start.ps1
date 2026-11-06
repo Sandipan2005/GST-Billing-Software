@@ -1,6 +1,6 @@
 <#>
 .SYNOPSIS
-    Auto Update & Start - Free GST Billing Software
+    Auto Update & Start - Bharat GST Billing
     Checks for upstream updates, merges if available, then starts the app.
 
 .DESCRIPTION

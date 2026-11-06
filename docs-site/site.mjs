@@ -20,11 +20,11 @@ export const SITE = {
 // Other pages use their own title and the first ~155 characters of their lead.
 export const SEO = {
   index: {
-    title: 'Free GST Billing Software for India: documentation and user guide',
+    title: 'Bharat GST Billing for India: documentation and user guide',
     description: 'Free, open-source GST billing software for Windows, Mac and Linux. Make GST invoices, track payments and stock, and prepare GSTR-1 and GSTR-3B. No signup, works offline.',
   },
   install: {
-    title: 'How to install Free GST Billing Software on Windows, Mac and Linux',
+    title: 'How to install Bharat GST Billing on Windows, Mac and Linux',
     description: 'Download one ZIP, extract it and click Install. Sets up everything on Windows without admin rights. Step-by-step install for Windows, macOS and Linux.',
   },
   'first-invoice': {

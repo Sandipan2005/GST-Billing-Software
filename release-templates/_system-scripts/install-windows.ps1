@@ -15,7 +15,7 @@ $RootDir   = Split-Path -Parent $ScriptDir
 
 Write-Host ''
 Write-Host '  ============================================================'
-Write-Host '   Free GST Billing Software - Installer'
+Write-Host '   Bharat GST Billing - Installer'
 Write-Host '  ============================================================'
 Write-Host ''
 
@@ -156,7 +156,7 @@ try {
     $lines = @(
       '[.ShellClassInfo]',
       'IconResource=_system\app-icon.ico,0',
-      'InfoTip=Free GST Billing Software - open the launcher inside'
+      'InfoTip=Bharat GST Billing - open the launcher inside'
     )
     Set-Content -Path $ini -Value $lines -Encoding ASCII -Force
     attrib +H +S "$ini" 2>$null

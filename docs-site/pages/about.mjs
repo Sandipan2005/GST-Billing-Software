@@ -19,7 +19,7 @@ const SERVICES = [
   ['AI automation', 'Automate the repetitive work in the software you already use.'],
   ['Mobile apps', 'Android and iPhone apps for your business or customers.'],
 ];
-const share = encodeURIComponent(`I make my GST invoices with Free GST Billing Software. It's free, works offline and keeps data on your own computer: ${SITE.repo}`);
+const share = encodeURIComponent(`I make my GST invoices with Bharat GST Billing. It's free, works offline and keeps data on your own computer: ${SITE.repo}`);
 
 export default [
 {

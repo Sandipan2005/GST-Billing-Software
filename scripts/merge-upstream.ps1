@@ -1,6 +1,6 @@
 <#>
 .SYNOPSIS
-    Merge Upstream Changes - Free GST Billing Software
+    Merge Upstream Changes - Bharat GST Billing
     Safely merges upstream changes while preserving your customizations.
 
 .DESCRIPTION

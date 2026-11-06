@@ -108,7 +108,7 @@ export default [
 
 <section id="app-not-running">
 <h2>"Needs a Quick Start"</h2>
-<p>If the app's engine is not running, the page says <b>Free GST Billing Software Needs a Quick Start</b>. Your data is safe. Double-click the <b>Free GST Billing</b> icon on your Desktop or in the Start menu: it starts the app, and the page carries on by itself once it is running. An app icon made by Chrome or Edge cannot start the app; use ours, and remove the other one (right-click it, then ${ui('Uninstall')}).</p>
+<p>If the app's engine is not running, the page says <b>Bharat GST Billing Needs a Quick Start</b>. Your data is safe. Double-click the <b>Free GST Billing</b> icon on your Desktop or in the Start menu: it starts the app, and the page carries on by itself once it is running. An app icon made by Chrome or Edge cannot start the app; use ours, and remove the other one (right-click it, then ${ui('Uninstall')}).</p>
 </section>
 `,
 },
@@ -211,7 +211,7 @@ export default [
 
 <section id="cannot-connect">
 <h3>"Failed to fetch", "App Not Running" or "Needs a Quick Start"</h3>
-<p>You may see: <strong>"Failed to fetch"</strong> (Chrome, Edge), <strong>"NetworkError when attempting to fetch resource"</strong> (Firefox) or <strong>"Load failed"</strong> (Safari), often after words like <i>Restore failed:</i> or <i>Export failed:</i>; a red dot on <b>Control Panel</b> in the menu; a page saying <strong>"Free GST Billing Software Needs a Quick Start"</strong>; <strong>"Could not check the PIN. Is the app still running?"</strong>; or the browser's own <strong>"This site can't be reached"</strong> or a blank page.</p>
+<p>You may see: <strong>"Failed to fetch"</strong> (Chrome, Edge), <strong>"NetworkError when attempting to fetch resource"</strong> (Firefox) or <strong>"Load failed"</strong> (Safari), often after words like <i>Restore failed:</i> or <i>Export failed:</i>; a red dot on <b>Control Panel</b> in the menu; a page saying <strong>"Bharat GST Billing Needs a Quick Start"</strong>; <strong>"Could not check the PIN. Is the app still running?"</strong>; or the browser's own <strong>"This site can't be reached"</strong> or a blank page.</p>
 <p>The app's engine (the server on your computer) is not running: the computer was restarted, the app was stopped, or it closed. Nothing already saved is lost.</p>
 <ol>
   <li>Double-click the <b>Free GST Billing</b> icon on your Desktop or in the Start menu (Mac: <b>Free GST Billing - MAC</b>; Linux: the start command in <a href="install-linux.html#start">Step 3</a>). It starts the app if needed and opens the right address. If a small launcher window opens instead (an install from before version 1.10.83, the first time), click ${ui('Open App')}.</li>

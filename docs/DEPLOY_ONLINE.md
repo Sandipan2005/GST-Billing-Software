@@ -1,4 +1,4 @@
-# Running Free GST Billing Software online: not yet
+# Running Bharat GST Billing online: not yet
 
 An earlier version of this page described hosting the app on Railway, Render, Fly.io, Vercel + Supabase, a VPS or a Cloudflare Tunnel. **Don't follow those steps.** They do not work with the app as it is, and they are not safe:
 

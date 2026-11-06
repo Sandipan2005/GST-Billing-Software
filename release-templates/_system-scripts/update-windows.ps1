@@ -38,7 +38,7 @@ if ($InstallTo) {
 
 Write-Host ''
 Write-Host '  ============================================================'
-Write-Host '   Free GST Billing Software - Update'
+Write-Host '   Bharat GST Billing - Update'
 Write-Host '  ============================================================'
 Write-Host ''
 

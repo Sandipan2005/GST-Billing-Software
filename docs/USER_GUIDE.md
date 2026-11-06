@@ -1,4 +1,4 @@
-# Free GST Billing Software — User Guide
+# Bharat GST Billing — User Guide
 
 A plain-language guide for everyone who uses this app — no coding background
 needed. If you only have 2 minutes, jump to [Quick Start](#quick-start).
