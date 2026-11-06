@@ -153,7 +153,7 @@ if ($rebaseExitCode -ne 0) {
 Write-Color "✅ Rebase successful! Your customizations are updated." $Green
 
 # Push custom branch
-if (Confirm-Action "Push updated $CustomBranch to origin?")) {
+if (Confirm-Action "Push updated $CustomBranch to origin?") {
     git push origin $CustomBranch --force-with-lease
     Write-Color "✅ Pushed to origin/$CustomBranch" $Green
 }
